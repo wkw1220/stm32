@@ -1,0 +1,1330 @@
+Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+
+==============================================================================
+
+Section Cross References
+
+    system_stm32f10x.o(i.SetSysClock) refers to system_stm32f10x.o(i.SetSysClockTo72) for SetSysClockTo72
+    system_stm32f10x.o(i.SystemCoreClockUpdate) refers to system_stm32f10x.o(.data) for SystemCoreClock
+    system_stm32f10x.o(i.SystemInit) refers to system_stm32f10x.o(i.SetSysClock) for SetSysClock
+    startup_stm32f10x_hd.o(RESET) refers to startup_stm32f10x_hd.o(STACK) for __initial_sp
+    startup_stm32f10x_hd.o(RESET) refers to startup_stm32f10x_hd.o(.text) for Reset_Handler
+    startup_stm32f10x_hd.o(RESET) refers to dri_usart.o(i.USART1_IRQHandler) for USART1_IRQHandler
+    startup_stm32f10x_hd.o(.text) refers to system_stm32f10x.o(i.SystemInit) for SystemInit
+    startup_stm32f10x_hd.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    main.o(i.main) refers to dri_usart.o(i.Dri_USART_Init) for Dri_USART_Init
+    main.o(i.main) refers to printf6.o(i.__0printf$6) for __2printf
+    main.o(i.main) refers to inf_w5500_ping.o(i.Inf_W5500_Init) for Inf_W5500_Init
+    driver_led.o(i.Dri_Led_Init) refers to driver_led.o(i.Dri_Led_Off) for Dri_Led_Off
+    driver_led.o(i.Dri_Led_OffAll) refers to driver_led.o(i.Dri_Led_Off) for Dri_Led_Off
+    driver_led.o(i.Dri_Led_OnAll) refers to driver_led.o(i.Dri_Led_On) for Dri_Led_On
+    driver_led.o(i.Dri_Led_Toggle) refers to driver_led.o(i.Dri_Led_Off) for Dri_Led_Off
+    driver_led.o(i.Dri_Led_Toggle) refers to driver_led.o(i.Dri_Led_On) for Dri_Led_On
+    dri_usart.o(i.Dri_USART_Init) refers to dri_usart.o(i.Init_InternelFun) for Init_InternelFun
+    dri_usart.o(i.Dri_USART_Init_WithInterruput) refers to dri_usart.o(i.Init_InternelFun) for Init_InternelFun
+    dri_usart.o(i.Dri_USART_SendStr) refers to dri_usart.o(i.Dri_USART_SendChar) for Dri_USART_SendChar
+    dri_usart.o(i.Dri_USART_SendStr) refers to strlen.o(.text) for strlen
+    dri_usart.o(i.USART1_IRQHandler) refers to dri_usart.o(.data) for buff
+    dri_usart.o(i.fputc) refers to dri_usart.o(i.Dri_USART_SendChar) for Dri_USART_SendChar
+    driver_spi.o(i.Driver_SPI_Init) refers to driver_spi.o(i.Driver_SPI_Init_HardWare_Internet) for Driver_SPI_Init_HardWare_Internet
+    driver_spi.o(i.Driver_SPI_Start) refers to driver_spi.o(i.Driver_SPI_Start_Internet) for Driver_SPI_Start_Internet
+    driver_spi.o(i.Driver_SPI_Stop) refers to driver_spi.o(i.Driver_SPI_Stop_Internet) for Driver_SPI_Stop_Internet
+    driver_spi.o(i.Driver_SPI_SwapByte) refers to driver_spi.o(i.Driver_SPI_SwapByte_Internet) for Driver_SPI_SwapByte_Internet
+    delay.o(i.Delay_ms) refers to delay.o(i.Delay_us) for Delay_us
+    delay.o(i.Delay_s) refers to delay.o(i.Delay_ms) for Delay_ms
+    inf_w5500_ping.o(i.Inf_W5500_ConfigInfo) refers to printf6.o(i.__0printf$6) for __2printf
+    inf_w5500_ping.o(i.Inf_W5500_ConfigInfo) refers to w5500.o(i.WIZCHIP_WRITE_BUF) for WIZCHIP_WRITE_BUF
+    inf_w5500_ping.o(i.Inf_W5500_ConfigInfo) refers to inf_w5500_ping.o(.data) for ip
+    inf_w5500_ping.o(i.Inf_W5500_Init) refers to wizchip_conf.o(i.user_register_function) for user_register_function
+    inf_w5500_ping.o(i.Inf_W5500_Init) refers to driver_spi.o(i.Driver_SPI_Init) for Driver_SPI_Init
+    inf_w5500_ping.o(i.Inf_W5500_Init) refers to driver_gpio.o(i.Dri_GPIO_ResetAndInt_Init) for Dri_GPIO_ResetAndInt_Init
+    inf_w5500_ping.o(i.Inf_W5500_Init) refers to inf_w5500_ping.o(i.Inf_W5500_Restart) for Inf_W5500_Restart
+    inf_w5500_ping.o(i.Inf_W5500_Init) refers to inf_w5500_ping.o(i.Inf_W5500_ConfigInfo) for Inf_W5500_ConfigInfo
+    inf_w5500_ping.o(i.Inf_W5500_Restart) refers to delay.o(i.Delay_ms) for Delay_ms
+    dhcp.o(i.DHCP_init) refers to w5500.o(i.WIZCHIP_READ_BUF) for WIZCHIP_READ_BUF
+    dhcp.o(i.DHCP_init) refers to w5500.o(i.WIZCHIP_WRITE_BUF) for WIZCHIP_WRITE_BUF
+    dhcp.o(i.DHCP_init) refers to dhcp.o(i.reset_DHCP_timeout) for reset_DHCP_timeout
+    dhcp.o(i.DHCP_init) refers to dhcp.o(.data) for DHCP_CHADDR
+    dhcp.o(i.DHCP_run) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    dhcp.o(i.DHCP_run) refers to socket.o(i.socket) for socket
+    dhcp.o(i.DHCP_run) refers to dhcp.o(i.parseDHCPMSG) for parseDHCPMSG
+    dhcp.o(i.DHCP_run) refers to dhcp.o(i.send_DHCP_DISCOVER) for send_DHCP_DISCOVER
+    dhcp.o(i.DHCP_run) refers to dhcp.o(i.send_DHCP_REQUEST) for send_DHCP_REQUEST
+    dhcp.o(i.DHCP_run) refers to dhcp.o(i.check_DHCP_timeout) for check_DHCP_timeout
+    dhcp.o(i.DHCP_run) refers to dhcp.o(i.check_DHCP_leasedIP) for check_DHCP_leasedIP
+    dhcp.o(i.DHCP_run) refers to dhcp.o(i.reset_DHCP_timeout) for reset_DHCP_timeout
+    dhcp.o(i.DHCP_run) refers to dhcp.o(.data) for dhcp_state
+    dhcp.o(i.DHCP_stop) refers to socket.o(i.close) for close
+    dhcp.o(i.DHCP_stop) refers to dhcp.o(.data) for DHCP_SOCKET
+    dhcp.o(i.DHCP_time_handler) refers to dhcp.o(.data) for dhcp_tick_1s
+    dhcp.o(i.check_DHCP_leasedIP) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    dhcp.o(i.check_DHCP_leasedIP) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    dhcp.o(i.check_DHCP_leasedIP) refers to socket.o(i.sendto) for sendto
+    dhcp.o(i.check_DHCP_leasedIP) refers to dhcp.o(i.send_DHCP_DECLINE) for send_DHCP_DECLINE
+    dhcp.o(i.check_DHCP_leasedIP) refers to dhcp.o(.data) for DHCP_allocated_ip
+    dhcp.o(i.check_DHCP_timeout) refers to dhcp.o(i.send_DHCP_DISCOVER) for send_DHCP_DISCOVER
+    dhcp.o(i.check_DHCP_timeout) refers to dhcp.o(i.send_DHCP_REQUEST) for send_DHCP_REQUEST
+    dhcp.o(i.check_DHCP_timeout) refers to dhcp.o(i.reset_DHCP_timeout) for reset_DHCP_timeout
+    dhcp.o(i.check_DHCP_timeout) refers to dhcp.o(.data) for dhcp_retry_count
+    dhcp.o(i.default_ip_assign) refers to w5500.o(i.WIZCHIP_WRITE_BUF) for WIZCHIP_WRITE_BUF
+    dhcp.o(i.default_ip_assign) refers to dhcp.o(.data) for DHCP_allocated_ip
+    dhcp.o(i.default_ip_conflict) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    dhcp.o(i.default_ip_conflict) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    dhcp.o(i.default_ip_conflict) refers to w5500.o(i.WIZCHIP_WRITE_BUF) for WIZCHIP_WRITE_BUF
+    dhcp.o(i.default_ip_conflict) refers to dhcp.o(.data) for DHCP_CHADDR
+    dhcp.o(i.default_ip_update) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    dhcp.o(i.default_ip_update) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    dhcp.o(i.default_ip_update) refers to dhcp.o(i.default_ip_assign) for default_ip_assign
+    dhcp.o(i.default_ip_update) refers to w5500.o(i.WIZCHIP_WRITE_BUF) for WIZCHIP_WRITE_BUF
+    dhcp.o(i.default_ip_update) refers to dhcp.o(.data) for DHCP_CHADDR
+    dhcp.o(i.getDHCPLeasetime) refers to dhcp.o(.data) for dhcp_lease_time
+    dhcp.o(i.getDNSfromDHCP) refers to dhcp.o(.data) for DHCP_allocated_dns
+    dhcp.o(i.getGWfromDHCP) refers to dhcp.o(.data) for DHCP_allocated_gw
+    dhcp.o(i.getIPfromDHCP) refers to dhcp.o(.data) for DHCP_allocated_ip
+    dhcp.o(i.getSNfromDHCP) refers to dhcp.o(.data) for DHCP_allocated_sn
+    dhcp.o(i.makeDHCPMSG) refers to w5500.o(i.WIZCHIP_READ_BUF) for WIZCHIP_READ_BUF
+    dhcp.o(i.makeDHCPMSG) refers to dhcp.o(.data) for pDHCPMSG
+    dhcp.o(i.parseDHCPMSG) refers to w5500.o(i.getSn_RX_RSR) for getSn_RX_RSR
+    dhcp.o(i.parseDHCPMSG) refers to socket.o(i.recvfrom) for recvfrom
+    dhcp.o(i.parseDHCPMSG) refers to dhcp.o(.data) for DHCP_SOCKET
+    dhcp.o(i.reg_dhcp_cbfunc) refers to dhcp.o(i.default_ip_assign) for default_ip_assign
+    dhcp.o(i.reg_dhcp_cbfunc) refers to dhcp.o(.data) for dhcp_ip_assign
+    dhcp.o(i.reg_dhcp_cbfunc) refers to dhcp.o(i.default_ip_update) for default_ip_update
+    dhcp.o(i.reg_dhcp_cbfunc) refers to dhcp.o(i.default_ip_conflict) for default_ip_conflict
+    dhcp.o(i.reset_DHCP_timeout) refers to dhcp.o(.data) for dhcp_tick_1s
+    dhcp.o(i.send_DHCP_DECLINE) refers to dhcp.o(i.makeDHCPMSG) for makeDHCPMSG
+    dhcp.o(i.send_DHCP_DECLINE) refers to socket.o(i.sendto) for sendto
+    dhcp.o(i.send_DHCP_DECLINE) refers to dhcp.o(.data) for pDHCPMSG
+    dhcp.o(i.send_DHCP_DISCOVER) refers to dhcp.o(i.makeDHCPMSG) for makeDHCPMSG
+    dhcp.o(i.send_DHCP_DISCOVER) refers to dhcp.o(i.NibbleToHex) for NibbleToHex
+    dhcp.o(i.send_DHCP_DISCOVER) refers to socket.o(i.sendto) for sendto
+    dhcp.o(i.send_DHCP_DISCOVER) refers to dhcp.o(.data) for DHCP_SIP
+    dhcp.o(i.send_DHCP_REQUEST) refers to dhcp.o(i.makeDHCPMSG) for makeDHCPMSG
+    dhcp.o(i.send_DHCP_REQUEST) refers to dhcp.o(i.NibbleToHex) for NibbleToHex
+    dhcp.o(i.send_DHCP_REQUEST) refers to socket.o(i.sendto) for sendto
+    dhcp.o(i.send_DHCP_REQUEST) refers to dhcp.o(.data) for dhcp_state
+    dhcp.o(.data) refers to dhcp.o(i.default_ip_assign) for default_ip_assign
+    dhcp.o(.data) refers to dhcp.o(i.default_ip_update) for default_ip_update
+    dhcp.o(.data) refers to dhcp.o(i.default_ip_conflict) for default_ip_conflict
+    httpparser.o(i.ATOI) refers to httpparser.o(i.C2D) for C2D
+    httpparser.o(i.find_http_uri_type) refers to strstr.o(.text) for strstr
+    httpparser.o(i.get_http_param_value) refers to httpparser.o(i.mid) for mid
+    httpparser.o(i.get_http_param_value) refers to httpparser.o(i.ATOI) for ATOI
+    httpparser.o(i.get_http_param_value) refers to strstr.o(.text) for strstr
+    httpparser.o(i.get_http_param_value) refers to strlen.o(.text) for strlen
+    httpparser.o(i.get_http_param_value) refers to strncpy.o(.text) for strncpy
+    httpparser.o(i.get_http_param_value) refers to httpparser.o(i.unescape_http_url) for unescape_http_url
+    httpparser.o(i.get_http_param_value) refers to httpparser.o(i.replacetochar) for replacetochar
+    httpparser.o(i.get_http_param_value) refers to httpparser.o(.bss) for BUFPUB
+    httpparser.o(i.get_http_uri_name) refers to strcpy.o(.text) for strcpy
+    httpparser.o(i.get_http_uri_name) refers to strtok.o(.text) for strtok
+    httpparser.o(i.get_http_uri_name) refers to strcmp.o(.text) for strcmp
+    httpparser.o(i.inet_addr_) refers to strcpy.o(.text) for strcpy
+    httpparser.o(i.inet_addr_) refers to strtok.o(.text) for strtok
+    httpparser.o(i.inet_addr_) refers to httpparser.o(i.ATOI) for ATOI
+    httpparser.o(i.make_http_response_head) refers to printf6.o(i.__0sprintf$6) for __2sprintf
+    httpparser.o(i.make_http_response_head) refers to strcpy.o(.text) for strcpy
+    httpparser.o(i.make_http_response_head) refers to strcat.o(.text) for strcat
+    httpparser.o(i.make_http_response_head) refers to httpparser.o(.conststring) for .conststring
+    httpparser.o(i.mid) refers to strstr.o(.text) for strstr
+    httpparser.o(i.mid) refers to strlen.o(.text) for strlen
+    httpparser.o(i.mid) refers to strncpy.o(.text) for strncpy
+    httpparser.o(i.parse_http_request) refers to strtok.o(.text) for strtok
+    httpparser.o(i.parse_http_request) refers to strcmp.o(.text) for strcmp
+    httpparser.o(i.parse_http_request) refers to strcpy.o(.text) for strcpy
+    httpparser.o(i.unescape_http_url) refers to httpparser.o(i.C2D) for C2D
+    httpserver.o(i.display_reg_webContent_list) refers to printf6.o(i.__0printf$6) for __2printf
+    httpserver.o(i.display_reg_webContent_list) refers to httpserver.o(.data) for total_content_cnt
+    httpserver.o(i.display_reg_webContent_list) refers to httpserver.o(.bss) for web_content
+    httpserver.o(i.find_userReg_webContent) refers to strcmp.o(.text) for strcmp
+    httpserver.o(i.find_userReg_webContent) refers to httpserver.o(.bss) for web_content
+    httpserver.o(i.find_userReg_webContent) refers to httpserver.o(.data) for total_content_cnt
+    httpserver.o(i.getHTTPSequenceNum) refers to httpserver.o(.data) for HTTPSock_Num
+    httpserver.o(i.getHTTPSocketNum) refers to httpserver.o(.data) for HTTPSock_Num
+    httpserver.o(i.get_httpServer_timecount) refers to httpserver.o(.data) for httpServer_tick_1s
+    httpserver.o(i.httpServer_Sockinit) refers to httpserver.o(.data) for HTTPSock_Num
+    httpserver.o(i.httpServer_init) refers to httpserver.o(i.httpServer_Sockinit) for httpServer_Sockinit
+    httpserver.o(i.httpServer_init) refers to httpserver.o(.data) for pHTTP_TX
+    httpserver.o(i.httpServer_run) refers to httpserver.o(i.getHTTPSocketNum) for getHTTPSocketNum
+    httpserver.o(i.httpServer_run) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    httpserver.o(i.httpServer_run) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    httpserver.o(i.httpServer_run) refers to w5500.o(i.getSn_RX_RSR) for getSn_RX_RSR
+    httpserver.o(i.httpServer_run) refers to socket.o(i.recv) for recv
+    httpserver.o(i.httpServer_run) refers to httpparser.o(i.parse_http_request) for parse_http_request
+    httpserver.o(i.httpServer_run) refers to w5500.o(i.WIZCHIP_READ_BUF) for WIZCHIP_READ_BUF
+    httpserver.o(i.httpServer_run) refers to printf6.o(i.__0printf$6) for __2printf
+    httpserver.o(i.httpServer_run) refers to httpserver.o(i.http_process_handler) for http_process_handler
+    httpserver.o(i.httpServer_run) refers to httpserver.o(i.get_httpServer_timecount) for get_httpServer_timecount
+    httpserver.o(i.httpServer_run) refers to w5500.o(i.getSn_TX_FSR) for getSn_TX_FSR
+    httpserver.o(i.httpServer_run) refers to httpserver.o(i.send_http_response_body) for send_http_response_body
+    httpserver.o(i.httpServer_run) refers to httpserver.o(i.http_disconnect) for http_disconnect
+    httpserver.o(i.httpServer_run) refers to socket.o(i.disconnect) for disconnect
+    httpserver.o(i.httpServer_run) refers to socket.o(i.socket) for socket
+    httpserver.o(i.httpServer_run) refers to socket.o(i.listen) for listen
+    httpserver.o(i.httpServer_run) refers to httpserver.o(.data) for pHTTP_RX
+    httpserver.o(i.httpServer_run) refers to httpserver.o(.bss) for HTTPSock_Status
+    httpserver.o(i.httpServer_run) refers to httpserver.o(.conststring) for .conststring
+    httpserver.o(i.httpServer_time_handler) refers to httpserver.o(.data) for httpServer_tick_1s
+    httpserver.o(i.http_disconnect) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    httpserver.o(i.http_disconnect) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    httpserver.o(i.http_process_handler) refers to memseta.o(.text) for __aeabi_memclr4
+    httpserver.o(i.http_process_handler) refers to httpserver.o(i.getHTTPSequenceNum) for getHTTPSequenceNum
+    httpserver.o(i.http_process_handler) refers to httpserver.o(i.send_http_response_header) for send_http_response_header
+    httpserver.o(i.http_process_handler) refers to httpparser.o(i.get_http_uri_name) for get_http_uri_name
+    httpserver.o(i.http_process_handler) refers to strcmp.o(.text) for strcmp
+    httpserver.o(i.http_process_handler) refers to strcpy.o(.text) for strcpy
+    httpserver.o(i.http_process_handler) refers to httpparser.o(i.find_http_uri_type) for find_http_uri_type
+    httpserver.o(i.http_process_handler) refers to printf6.o(i.__0printf$6) for __2printf
+    httpserver.o(i.http_process_handler) refers to httputil.o(i.http_get_cgi_handler) for http_get_cgi_handler
+    httpserver.o(i.http_process_handler) refers to httpserver.o(i.send_http_response_cgi) for send_http_response_cgi
+    httpserver.o(i.http_process_handler) refers to httpserver.o(i.find_userReg_webContent) for find_userReg_webContent
+    httpserver.o(i.http_process_handler) refers to httpserver.o(i.send_http_response_body) for send_http_response_body
+    httpserver.o(i.http_process_handler) refers to httpparser.o(i.mid) for mid
+    httpserver.o(i.http_process_handler) refers to httputil.o(i.http_post_cgi_handler) for http_post_cgi_handler
+    httpserver.o(i.http_process_handler) refers to httpserver.o(.data) for pHTTP_RX
+    httpserver.o(i.http_process_handler) refers to httpserver.o(.bss) for HTTPSock_Status
+    httpserver.o(i.http_process_handler) refers to httpserver.o(.conststring) for .conststring
+    httpserver.o(i.read_userReg_webContent) refers to strncpy.o(.text) for strncpy
+    httpserver.o(i.read_userReg_webContent) refers to strlen.o(.text) for strlen
+    httpserver.o(i.read_userReg_webContent) refers to httpserver.o(.data) for total_content_cnt
+    httpserver.o(i.read_userReg_webContent) refers to httpserver.o(.bss) for web_content
+    httpserver.o(i.reg_httpServer_cbfunc) refers to httpserver.o(.data) for HTTPServer_ReStart
+    httpserver.o(i.reg_httpServer_webContent) refers to strlen.o(.text) for strlen
+    httpserver.o(i.reg_httpServer_webContent) refers to malloc.o(i.malloc) for malloc
+    httpserver.o(i.reg_httpServer_webContent) refers to strcpy.o(.text) for strcpy
+    httpserver.o(i.reg_httpServer_webContent) refers to httpserver.o(.data) for total_content_cnt
+    httpserver.o(i.reg_httpServer_webContent) refers to httpserver.o(.bss) for web_content
+    httpserver.o(i.send_http_response_body) refers to httpserver.o(i.getHTTPSequenceNum) for getHTTPSequenceNum
+    httpserver.o(i.send_http_response_body) refers to memseta.o(.text) for __aeabi_memclr
+    httpserver.o(i.send_http_response_body) refers to strcpy.o(.text) for strcpy
+    httpserver.o(i.send_http_response_body) refers to printf6.o(i.__0printf$6) for __2printf
+    httpserver.o(i.send_http_response_body) refers to httpserver.o(i.read_userReg_webContent) for read_userReg_webContent
+    httpserver.o(i.send_http_response_body) refers to socket.o(i.send) for send
+    httpserver.o(i.send_http_response_body) refers to httpserver.o(.bss) for HTTPSock_Status
+    httpserver.o(i.send_http_response_cgi) refers to printf6.o(i.__0printf$6) for __2printf
+    httpserver.o(i.send_http_response_cgi) refers to printf6.o(i.__0sprintf$6) for __2sprintf
+    httpserver.o(i.send_http_response_cgi) refers to socket.o(i.send) for send
+    httpserver.o(i.send_http_response_cgi) refers to httpserver.o(.conststring) for .conststring
+    httpserver.o(i.send_http_response_header) refers to printf6.o(i.__0printf$6) for __2printf
+    httpserver.o(i.send_http_response_header) refers to httpparser.o(i.make_http_response_head) for make_http_response_head
+    httpserver.o(i.send_http_response_header) refers to memcpya.o(.text) for __aeabi_memcpy
+    httpserver.o(i.send_http_response_header) refers to strlen.o(.text) for strlen
+    httpserver.o(i.send_http_response_header) refers to socket.o(i.send) for send
+    httpserver.o(i.send_http_response_header) refers to httpserver.o(.data) for http_response
+    httpserver.o(i.send_http_response_header) refers to httpserver.o(.constdata) for ERROR_REQUEST_PAGE
+    httpserver.o(.data) refers to httpserver.o(i.default_mcu_reset) for default_mcu_reset
+    httpserver.o(.data) refers to httpserver.o(i.default_wdt_reset) for default_wdt_reset
+    httputil.o(i.http_get_cgi_handler) refers to httputil.o(i.predefined_get_cgi_processor) for predefined_get_cgi_processor
+    httputil.o(i.http_get_cgi_handler) refers to strcmp.o(.text) for strcmp
+    httputil.o(i.http_post_cgi_handler) refers to httputil.o(i.predefined_set_cgi_processor) for predefined_set_cgi_processor
+    httputil.o(i.http_post_cgi_handler) refers to strcmp.o(.text) for strcmp
+    httputil.o(i.http_post_cgi_handler) refers to printf6.o(i.__0sprintf$6) for __2sprintf
+    socket.o(i.close) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    socket.o(i.close) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    socket.o(i.close) refers to socket.o(.data) for sock_io_mode
+    socket.o(i.close) refers to socket.o(.bss) for sock_remained_size
+    socket.o(i.connect) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    socket.o(i.connect) refers to w5500.o(i.WIZCHIP_WRITE_BUF) for WIZCHIP_WRITE_BUF
+    socket.o(i.connect) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    socket.o(i.connect) refers to socket.o(.data) for sock_io_mode
+    socket.o(i.ctlsocket) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    socket.o(i.ctlsocket) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    socket.o(i.ctlsocket) refers to socket.o(.data) for sock_io_mode
+    socket.o(i.disconnect) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    socket.o(i.disconnect) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    socket.o(i.disconnect) refers to socket.o(i.close) for close
+    socket.o(i.disconnect) refers to socket.o(.data) for sock_is_sending
+    socket.o(i.getsockopt) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    socket.o(i.getsockopt) refers to w5500.o(i.WIZCHIP_READ_BUF) for WIZCHIP_READ_BUF
+    socket.o(i.getsockopt) refers to w5500.o(i.getSn_TX_FSR) for getSn_TX_FSR
+    socket.o(i.getsockopt) refers to w5500.o(i.getSn_RX_RSR) for getSn_RX_RSR
+    socket.o(i.getsockopt) refers to socket.o(.bss) for sock_remained_size
+    socket.o(i.getsockopt) refers to socket.o(.data) for sock_pack_info
+    socket.o(i.listen) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    socket.o(i.listen) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    socket.o(i.listen) refers to socket.o(i.close) for close
+    socket.o(i.recv) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    socket.o(i.recv) refers to w5500.o(i.getSn_RX_RSR) for getSn_RX_RSR
+    socket.o(i.recv) refers to w5500.o(i.getSn_TX_FSR) for getSn_TX_FSR
+    socket.o(i.recv) refers to socket.o(i.close) for close
+    socket.o(i.recv) refers to w5500.o(i.wiz_recv_data) for wiz_recv_data
+    socket.o(i.recv) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    socket.o(i.recv) refers to socket.o(.data) for sock_io_mode
+    socket.o(i.recvfrom) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    socket.o(i.recvfrom) refers to w5500.o(i.getSn_RX_RSR) for getSn_RX_RSR
+    socket.o(i.recvfrom) refers to w5500.o(i.wiz_recv_data) for wiz_recv_data
+    socket.o(i.recvfrom) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    socket.o(i.recvfrom) refers to socket.o(i.close) for close
+    socket.o(i.recvfrom) refers to w5500.o(i.wiz_recv_ignore) for wiz_recv_ignore
+    socket.o(i.recvfrom) refers to socket.o(.bss) for sock_remained_size
+    socket.o(i.recvfrom) refers to socket.o(.data) for sock_io_mode
+    socket.o(i.send) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    socket.o(i.send) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    socket.o(i.send) refers to socket.o(i.close) for close
+    socket.o(i.send) refers to w5500.o(i.getSn_TX_FSR) for getSn_TX_FSR
+    socket.o(i.send) refers to w5500.o(i.wiz_send_data) for wiz_send_data
+    socket.o(i.send) refers to socket.o(.data) for sock_is_sending
+    socket.o(i.sendto) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    socket.o(i.sendto) refers to w5500.o(i.WIZCHIP_WRITE_BUF) for WIZCHIP_WRITE_BUF
+    socket.o(i.sendto) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    socket.o(i.sendto) refers to w5500.o(i.getSn_TX_FSR) for getSn_TX_FSR
+    socket.o(i.sendto) refers to w5500.o(i.wiz_send_data) for wiz_send_data
+    socket.o(i.sendto) refers to socket.o(.data) for sock_io_mode
+    socket.o(i.setsockopt) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    socket.o(i.setsockopt) refers to w5500.o(i.WIZCHIP_WRITE_BUF) for WIZCHIP_WRITE_BUF
+    socket.o(i.setsockopt) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    socket.o(i.socket) refers to w5500.o(i.WIZCHIP_READ_BUF) for WIZCHIP_READ_BUF
+    socket.o(i.socket) refers to socket.o(i.close) for close
+    socket.o(i.socket) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    socket.o(i.socket) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    socket.o(i.socket) refers to socket.o(.data) for sock_any_port
+    socket.o(i.socket) refers to socket.o(.bss) for sock_remained_size
+    w5500.o(i.WIZCHIP_READ) refers to wizchip_conf.o(.data) for WIZCHIP
+    w5500.o(i.WIZCHIP_READ_BUF) refers to wizchip_conf.o(.data) for WIZCHIP
+    w5500.o(i.WIZCHIP_WRITE) refers to wizchip_conf.o(.data) for WIZCHIP
+    w5500.o(i.WIZCHIP_WRITE_BUF) refers to wizchip_conf.o(.data) for WIZCHIP
+    w5500.o(i.getSn_RX_RSR) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    w5500.o(i.getSn_TX_FSR) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    w5500.o(i.wiz_recv_data) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    w5500.o(i.wiz_recv_data) refers to w5500.o(i.WIZCHIP_READ_BUF) for WIZCHIP_READ_BUF
+    w5500.o(i.wiz_recv_data) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    w5500.o(i.wiz_recv_ignore) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    w5500.o(i.wiz_recv_ignore) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    w5500.o(i.wiz_send_data) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    w5500.o(i.wiz_send_data) refers to w5500.o(i.WIZCHIP_WRITE_BUF) for WIZCHIP_WRITE_BUF
+    w5500.o(i.wiz_send_data) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    wizchip_conf.o(i.ctlnetwork) refers to wizchip_conf.o(i.wizchip_setnetinfo) for wizchip_setnetinfo
+    wizchip_conf.o(i.ctlnetwork) refers to wizchip_conf.o(i.wizchip_getnetinfo) for wizchip_getnetinfo
+    wizchip_conf.o(i.ctlnetwork) refers to wizchip_conf.o(i.wizchip_setnetmode) for wizchip_setnetmode
+    wizchip_conf.o(i.ctlnetwork) refers to wizchip_conf.o(i.wizchip_getnetmode) for wizchip_getnetmode
+    wizchip_conf.o(i.ctlnetwork) refers to wizchip_conf.o(i.wizchip_settimeout) for wizchip_settimeout
+    wizchip_conf.o(i.ctlnetwork) refers to wizchip_conf.o(i.wizchip_gettimeout) for wizchip_gettimeout
+    wizchip_conf.o(i.ctlwizchip) refers to wizchip_conf.o(i.wizchip_sw_reset) for wizchip_sw_reset
+    wizchip_conf.o(i.ctlwizchip) refers to wizchip_conf.o(i.wizchip_init) for wizchip_init
+    wizchip_conf.o(i.ctlwizchip) refers to wizchip_conf.o(i.wizchip_clrinterrupt) for wizchip_clrinterrupt
+    wizchip_conf.o(i.ctlwizchip) refers to wizchip_conf.o(i.wizchip_getinterrupt) for wizchip_getinterrupt
+    wizchip_conf.o(i.ctlwizchip) refers to wizchip_conf.o(i.wizchip_setinterruptmask) for wizchip_setinterruptmask
+    wizchip_conf.o(i.ctlwizchip) refers to wizchip_conf.o(i.wizchip_getinterruptmask) for wizchip_getinterruptmask
+    wizchip_conf.o(i.ctlwizchip) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    wizchip_conf.o(i.ctlwizchip) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    wizchip_conf.o(i.ctlwizchip) refers to wizchip_conf.o(i.wizphy_reset) for wizphy_reset
+    wizchip_conf.o(i.ctlwizchip) refers to wizchip_conf.o(i.wizphy_setphyconf) for wizphy_setphyconf
+    wizchip_conf.o(i.ctlwizchip) refers to wizchip_conf.o(i.wizphy_getphyconf) for wizphy_getphyconf
+    wizchip_conf.o(i.ctlwizchip) refers to wizchip_conf.o(i.wizphy_setphypmode) for wizphy_setphypmode
+    wizchip_conf.o(i.ctlwizchip) refers to wizchip_conf.o(i.wizphy_getphypmode) for wizphy_getphypmode
+    wizchip_conf.o(i.ctlwizchip) refers to wizchip_conf.o(i.wizphy_getphylink) for wizphy_getphylink
+    wizchip_conf.o(i.ctlwizchip) refers to wizchip_conf.o(.data) for WIZCHIP
+    wizchip_conf.o(i.reg_wizchip_bus_cbfunc) refers to wizchip_conf.o(.data) for WIZCHIP
+    wizchip_conf.o(i.reg_wizchip_bus_cbfunc) refers to wizchip_conf.o(i.wizchip_bus_readdata) for wizchip_bus_readdata
+    wizchip_conf.o(i.reg_wizchip_bus_cbfunc) refers to wizchip_conf.o(i.wizchip_bus_writedata) for wizchip_bus_writedata
+    wizchip_conf.o(i.reg_wizchip_cris_cbfunc) refers to wizchip_conf.o(i.wizchip_cris_enter) for wizchip_cris_enter
+    wizchip_conf.o(i.reg_wizchip_cris_cbfunc) refers to wizchip_conf.o(.data) for WIZCHIP
+    wizchip_conf.o(i.reg_wizchip_cris_cbfunc) refers to wizchip_conf.o(i.wizchip_cris_exit) for wizchip_cris_exit
+    wizchip_conf.o(i.reg_wizchip_cs_cbfunc) refers to wizchip_conf.o(i.wizchip_cs_select) for wizchip_cs_select
+    wizchip_conf.o(i.reg_wizchip_cs_cbfunc) refers to wizchip_conf.o(.data) for WIZCHIP
+    wizchip_conf.o(i.reg_wizchip_cs_cbfunc) refers to wizchip_conf.o(i.wizchip_cs_deselect) for wizchip_cs_deselect
+    wizchip_conf.o(i.reg_wizchip_spi_cbfunc) refers to wizchip_conf.o(.data) for WIZCHIP
+    wizchip_conf.o(i.reg_wizchip_spi_cbfunc) refers to wizchip_conf.o(i.wizchip_spi_readbyte) for wizchip_spi_readbyte
+    wizchip_conf.o(i.reg_wizchip_spi_cbfunc) refers to wizchip_conf.o(i.wizchip_spi_writebyte) for wizchip_spi_writebyte
+    wizchip_conf.o(i.reg_wizchip_spiburst_cbfunc) refers to wizchip_conf.o(.data) for WIZCHIP
+    wizchip_conf.o(i.reg_wizchip_spiburst_cbfunc) refers to wizchip_conf.o(i.wizchip_spi_readburst) for wizchip_spi_readburst
+    wizchip_conf.o(i.reg_wizchip_spiburst_cbfunc) refers to wizchip_conf.o(i.wizchip_spi_writeburst) for wizchip_spi_writeburst
+    wizchip_conf.o(i.user_register_function) refers to wizchip_conf.o(i.reg_wizchip_cris_cbfunc) for reg_wizchip_cris_cbfunc
+    wizchip_conf.o(i.user_register_function) refers to wizchip_conf.o(i.reg_wizchip_cs_cbfunc) for reg_wizchip_cs_cbfunc
+    wizchip_conf.o(i.user_register_function) refers to wizchip_conf.o(i.reg_wizchip_spi_cbfunc) for reg_wizchip_spi_cbfunc
+    wizchip_conf.o(i.user_register_function) refers to wizchip_conf.o(i.wizchip_cris_exit) for wizchip_cris_exit
+    wizchip_conf.o(i.user_register_function) refers to wizchip_conf.o(i.wizchip_cris_enter) for wizchip_cris_enter
+    wizchip_conf.o(i.user_register_function) refers to wizchip_conf.o(i.wizchip_cs_deselect) for wizchip_cs_deselect
+    wizchip_conf.o(i.user_register_function) refers to wizchip_conf.o(i.wizchip_cs_select) for wizchip_cs_select
+    wizchip_conf.o(i.user_register_function) refers to wizchip_conf.o(i.wizchip_spi_writebyte) for wizchip_spi_writebyte
+    wizchip_conf.o(i.user_register_function) refers to wizchip_conf.o(i.wizchip_spi_readbyte) for wizchip_spi_readbyte
+    wizchip_conf.o(i.wizchip_clrinterrupt) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    wizchip_conf.o(i.wizchip_cs_deselect) refers to driver_spi.o(i.Driver_SPI_Stop) for Driver_SPI_Stop
+    wizchip_conf.o(i.wizchip_cs_select) refers to driver_spi.o(i.Driver_SPI_Start) for Driver_SPI_Start
+    wizchip_conf.o(i.wizchip_getinterrupt) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    wizchip_conf.o(i.wizchip_getinterruptmask) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    wizchip_conf.o(i.wizchip_getnetinfo) refers to w5500.o(i.WIZCHIP_READ_BUF) for WIZCHIP_READ_BUF
+    wizchip_conf.o(i.wizchip_getnetinfo) refers to wizchip_conf.o(.data) for _DNS_
+    wizchip_conf.o(i.wizchip_getnetmode) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    wizchip_conf.o(i.wizchip_gettimeout) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    wizchip_conf.o(i.wizchip_init) refers to wizchip_conf.o(i.wizchip_sw_reset) for wizchip_sw_reset
+    wizchip_conf.o(i.wizchip_init) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    wizchip_conf.o(i.wizchip_setinterruptmask) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    wizchip_conf.o(i.wizchip_setnetinfo) refers to w5500.o(i.WIZCHIP_WRITE_BUF) for WIZCHIP_WRITE_BUF
+    wizchip_conf.o(i.wizchip_setnetinfo) refers to wizchip_conf.o(.data) for _DNS_
+    wizchip_conf.o(i.wizchip_setnetmode) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    wizchip_conf.o(i.wizchip_setnetmode) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    wizchip_conf.o(i.wizchip_settimeout) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    wizchip_conf.o(i.wizchip_spi_readbyte) refers to driver_spi.o(i.Driver_SPI_SwapByte) for Driver_SPI_SwapByte
+    wizchip_conf.o(i.wizchip_spi_writebyte) refers to driver_spi.o(i.Driver_SPI_SwapByte) for Driver_SPI_SwapByte
+    wizchip_conf.o(i.wizchip_sw_reset) refers to w5500.o(i.WIZCHIP_READ_BUF) for WIZCHIP_READ_BUF
+    wizchip_conf.o(i.wizchip_sw_reset) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    wizchip_conf.o(i.wizchip_sw_reset) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    wizchip_conf.o(i.wizchip_sw_reset) refers to w5500.o(i.WIZCHIP_WRITE_BUF) for WIZCHIP_WRITE_BUF
+    wizchip_conf.o(i.wizphy_getphyconf) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    wizchip_conf.o(i.wizphy_getphylink) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    wizchip_conf.o(i.wizphy_getphypmode) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    wizchip_conf.o(i.wizphy_getphystat) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    wizchip_conf.o(i.wizphy_reset) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    wizchip_conf.o(i.wizphy_reset) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    wizchip_conf.o(i.wizphy_setphyconf) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    wizchip_conf.o(i.wizphy_setphyconf) refers to wizchip_conf.o(i.wizphy_reset) for wizphy_reset
+    wizchip_conf.o(i.wizphy_setphypmode) refers to w5500.o(i.WIZCHIP_READ) for WIZCHIP_READ
+    wizchip_conf.o(i.wizphy_setphypmode) refers to w5500.o(i.WIZCHIP_WRITE) for WIZCHIP_WRITE
+    wizchip_conf.o(i.wizphy_setphypmode) refers to wizchip_conf.o(i.wizphy_reset) for wizphy_reset
+    wizchip_conf.o(.data) refers to wizchip_conf.o(i.wizchip_cris_enter) for wizchip_cris_enter
+    wizchip_conf.o(.data) refers to wizchip_conf.o(i.wizchip_cris_exit) for wizchip_cris_exit
+    wizchip_conf.o(.data) refers to wizchip_conf.o(i.wizchip_cs_select) for wizchip_cs_select
+    wizchip_conf.o(.data) refers to wizchip_conf.o(i.wizchip_cs_deselect) for wizchip_cs_deselect
+    wizchip_conf.o(.data) refers to wizchip_conf.o(i.wizchip_bus_readdata) for wizchip_bus_readdata
+    wizchip_conf.o(.data) refers to wizchip_conf.o(i.wizchip_bus_writedata) for wizchip_bus_writedata
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000F) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$00000011) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry12b.o(.ARM.Collect$$$$0000000E) for __rt_lib_shutdown_fini
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    strtok.o(.text) refers to strtok.o(.data) for .data
+    strtok_r.o(.text) refers to strtok_r.o(.data) for .data
+    printfb.o(i.__0fprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0fprintf$bare) refers to dri_usart.o(i.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0printf$bare) refers to dri_usart.o(i.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printfb.o(i.__0vfprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vfprintf$bare) refers to dri_usart.o(i.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vprintf$bare) refers to dri_usart.o(i.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printf0.o(i.__0fprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0fprintf$0) refers to dri_usart.o(i.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0printf$0) refers to dri_usart.o(i.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf0.o(i.__0vfprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vfprintf$0) refers to dri_usart.o(i.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vprintf$0) refers to dri_usart.o(i.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf1.o(i.__0fprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0fprintf$1) refers to dri_usart.o(i.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0printf$1) refers to dri_usart.o(i.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i.__0vfprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vfprintf$1) refers to dri_usart.o(i.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vprintf$1) refers to dri_usart.o(i.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf2.o(i.__0fprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0fprintf$2) refers to dri_usart.o(i.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0printf$2) refers to dri_usart.o(i.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf2.o(i.__0vfprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vfprintf$2) refers to dri_usart.o(i.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vprintf$2) refers to dri_usart.o(i.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf3.o(i.__0fprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0fprintf$3) refers to dri_usart.o(i.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0printf$3) refers to dri_usart.o(i.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i.__0vfprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vfprintf$3) refers to dri_usart.o(i.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vprintf$3) refers to dri_usart.o(i.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf4.o(i.__0fprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0fprintf$4) refers to dri_usart.o(i.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0printf$4) refers to dri_usart.o(i.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i.__0vfprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vfprintf$4) refers to dri_usart.o(i.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vprintf$4) refers to dri_usart.o(i.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf5.o(i.__0fprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0fprintf$5) refers to dri_usart.o(i.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0printf$5) refers to dri_usart.o(i.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i.__0vfprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vfprintf$5) refers to dri_usart.o(i.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vprintf$5) refers to dri_usart.o(i.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf6.o(i.__0fprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0fprintf$6) refers to dri_usart.o(i.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0printf$6) refers to dri_usart.o(i.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i.__0vfprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vfprintf$6) refers to dri_usart.o(i.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vprintf$6) refers to dri_usart.o(i.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_pre_padding) for _printf_pre_padding
+    printf6.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_post_padding) for _printf_post_padding
+    printf7.o(i.__0fprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0fprintf$7) refers to dri_usart.o(i.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0printf$7) refers to dri_usart.o(i.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i.__0vfprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vfprintf$7) refers to dri_usart.o(i.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vprintf$7) refers to dri_usart.o(i.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_pre_padding) for _printf_pre_padding
+    printf7.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_post_padding) for _printf_post_padding
+    printf8.o(i.__0fprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0fprintf$8) refers to dri_usart.o(i.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0printf$8) refers to dri_usart.o(i.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i.__0vfprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vfprintf$8) refers to dri_usart.o(i.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vprintf$8) refers to dri_usart.o(i.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_pre_padding) for _printf_pre_padding
+    printf8.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i.__0fprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0fprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0fprintf) refers to dri_usart.o(i.fputc) for fputc
+    printfa.o(i.__0printf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0printf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0printf) refers to dri_usart.o(i.fputc) for fputc
+    printfa.o(i.__0printf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0snprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0snprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0snprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0sprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0sprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0sprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i.__0vfprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vfprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vfprintf) refers to dri_usart.o(i.fputc) for fputc
+    printfa.o(i.__0vprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vprintf) refers to dri_usart.o(i.fputc) for fputc
+    printfa.o(i.__0vprintf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0vsnprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0vsprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i._fp_digits) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._fp_digits) refers to dmul.o(.text) for __aeabi_dmul
+    printfa.o(i._fp_digits) refers to ddiv.o(.text) for __aeabi_ddiv
+    printfa.o(i._fp_digits) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    printfa.o(i._fp_digits) refers to dadd.o(.text) for __aeabi_dadd
+    printfa.o(i._fp_digits) refers to dfixul.o(.text) for __aeabi_d2ulz
+    printfa.o(i._fp_digits) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_pre_padding) for _printf_pre_padding
+    printfa.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i._printf_core) refers to printfa.o(i._fp_digits) for _fp_digits
+    printfa.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printfa.o(i._printf_post_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_pre_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._snputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._sputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    malloc.o(i.free) refers to mvars.o(.data) for __microlib_freelist
+    malloc.o(i.malloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    malloc.o(i.malloc) refers to mvars.o(.data) for __microlib_freelist
+    malloc.o(i.malloc) refers to startup_stm32f10x_hd.o(HEAP) for __heap_base
+    mallocr.o(i.__free$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.__malloc$realloc) refers to mallocr.o(i.internal_alloc) for internal_alloc
+    mallocr.o(i.__malloc$realloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    mallocr.o(i.__malloc$realloc) refers to startup_stm32f10x_hd.o(HEAP) for __heap_base
+    mallocr.o(i.__malloc$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.internal_alloc) refers to memcpya.o(.text) for __aeabi_memcpy
+    mallocr.o(i.internal_alloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.realloc) refers to mallocr.o(i.__free$realloc) for __free$realloc
+    mallocr.o(i.realloc) refers to mallocr.o(i.internal_alloc) for internal_alloc
+    mallocr.o(i.realloc) refers to mallocr.o(i.__malloc$realloc) for __malloc$realloc
+    mallocr.o(i.realloc) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__aligned_malloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    malloca.o(i.__aligned_malloc) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__aligned_malloc) refers to startup_stm32f10x_hd.o(HEAP) for __heap_base
+    malloca.o(i.__free$memalign) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__malloc$memalign) refers to malloca.o(i.__aligned_malloc) for __aligned_malloc
+    mallocra.o(i.__aligned_malloc$realloc) refers to mallocra.o(i.internal_alloc) for internal_alloc
+    mallocra.o(i.__aligned_malloc$realloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    mallocra.o(i.__aligned_malloc$realloc) refers to startup_stm32f10x_hd.o(HEAP) for __heap_base
+    mallocra.o(i.__aligned_malloc$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.__free$realloc$memalign) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.__malloc$realloc$memalign) refers to mallocra.o(i.__aligned_malloc$realloc) for __aligned_malloc$realloc
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.__free$realloc$memalign) for __free$realloc$memalign
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.internal_alloc) for internal_alloc
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.__malloc$realloc$memalign) for __malloc$realloc$memalign
+    mallocra.o(i.__realloc$memalign) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.internal_alloc) refers to memcpya.o(.text) for __aeabi_memcpy
+    mallocra.o(i.internal_alloc) refers to mvars.o(.data) for __microlib_freelist
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_stm32f10x_hd.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_stm32f10x_hd.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dfixul.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixul.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing core_cm3.o(.emb_text), (32 bytes).
+    Removing system_stm32f10x.o(i.SystemCoreClockUpdate), (164 bytes).
+    Removing system_stm32f10x.o(.data), (20 bytes).
+    Removing startup_stm32f10x_hd.o(HEAP), (512 bytes).
+    Removing driver_led.o(i.Dri_Led_Init), (88 bytes).
+    Removing driver_led.o(i.Dri_Led_Off), (16 bytes).
+    Removing driver_led.o(i.Dri_Led_OffAll), (28 bytes).
+    Removing driver_led.o(i.Dri_Led_On), (16 bytes).
+    Removing driver_led.o(i.Dri_Led_OnAll), (28 bytes).
+    Removing driver_led.o(i.Dri_Led_Toggle), (32 bytes).
+    Removing dri_usart.o(i.Dri_USART_Init_WithInterruput), (148 bytes).
+    Removing dri_usart.o(i.Dri_USART_ReceiveChar), (28 bytes).
+    Removing dri_usart.o(i.Dri_USART_ReceiveStr), (52 bytes).
+    Removing dri_usart.o(i.Dri_USART_SendStr), (30 bytes).
+    Removing delay.o(i.Delay_s), (26 bytes).
+    Removing dhcp.o(i.DHCP_init), (224 bytes).
+    Removing dhcp.o(i.DHCP_run), (472 bytes).
+    Removing dhcp.o(i.DHCP_stop), (28 bytes).
+    Removing dhcp.o(i.DHCP_time_handler), (16 bytes).
+    Removing dhcp.o(i.NibbleToHex), (26 bytes).
+    Removing dhcp.o(i.check_DHCP_leasedIP), (120 bytes).
+    Removing dhcp.o(i.check_DHCP_timeout), (172 bytes).
+    Removing dhcp.o(i.default_ip_assign), (52 bytes).
+    Removing dhcp.o(i.default_ip_conflict), (36 bytes).
+    Removing dhcp.o(i.default_ip_update), (40 bytes).
+    Removing dhcp.o(i.getDHCPLeasetime), (12 bytes).
+    Removing dhcp.o(i.getDNSfromDHCP), (32 bytes).
+    Removing dhcp.o(i.getGWfromDHCP), (32 bytes).
+    Removing dhcp.o(i.getIPfromDHCP), (32 bytes).
+    Removing dhcp.o(i.getSNfromDHCP), (32 bytes).
+    Removing dhcp.o(i.makeDHCPMSG), (400 bytes).
+    Removing dhcp.o(i.parseDHCPMSG), (644 bytes).
+    Removing dhcp.o(i.reg_dhcp_cbfunc), (64 bytes).
+    Removing dhcp.o(i.reset_DHCP_timeout), (32 bytes).
+    Removing dhcp.o(i.send_DHCP_DECLINE), (512 bytes).
+    Removing dhcp.o(i.send_DHCP_DISCOVER), (664 bytes).
+    Removing dhcp.o(i.send_DHCP_REQUEST), (1000 bytes).
+    Removing dhcp.o(.data), (80 bytes).
+    Removing httpparser.o(i.ATOI), (36 bytes).
+    Removing httpparser.o(i.C2D), (54 bytes).
+    Removing httpparser.o(i.find_http_uri_type), (712 bytes).
+    Removing httpparser.o(i.get_http_param_value), (220 bytes).
+    Removing httpparser.o(i.get_http_uri_name), (64 bytes).
+    Removing httpparser.o(i.inet_addr_), (96 bytes).
+    Removing httpparser.o(i.make_http_response_head), (720 bytes).
+    Removing httpparser.o(i.mid), (68 bytes).
+    Removing httpparser.o(i.parse_http_request), (200 bytes).
+    Removing httpparser.o(i.replacetochar), (26 bytes).
+    Removing httpparser.o(i.unescape_http_url), (62 bytes).
+    Removing httpparser.o(.bss), (256 bytes).
+    Removing httpparser.o(.constdata), (271 bytes).
+    Removing httpparser.o(.conststring), (699 bytes).
+    Removing httpserver.o(i.default_mcu_reset), (2 bytes).
+    Removing httpserver.o(i.default_wdt_reset), (2 bytes).
+    Removing httpserver.o(i.display_reg_webContent_list), (320 bytes).
+    Removing httpserver.o(i.find_userReg_webContent), (88 bytes).
+    Removing httpserver.o(i.getHTTPSequenceNum), (36 bytes).
+    Removing httpserver.o(i.getHTTPSocketNum), (12 bytes).
+    Removing httpserver.o(i.get_httpServer_timecount), (12 bytes).
+    Removing httpserver.o(i.httpServer_Sockinit), (28 bytes).
+    Removing httpserver.o(i.httpServer_init), (36 bytes).
+    Removing httpserver.o(i.httpServer_run), (1020 bytes).
+    Removing httpserver.o(i.httpServer_time_handler), (16 bytes).
+    Removing httpserver.o(i.http_disconnect), (48 bytes).
+    Removing httpserver.o(i.http_process_handler), (1100 bytes).
+    Removing httpserver.o(i.read_userReg_webContent), (84 bytes).
+    Removing httpserver.o(i.reg_httpServer_cbfunc), (24 bytes).
+    Removing httpserver.o(i.reg_httpServer_webContent), (132 bytes).
+    Removing httpserver.o(i.send_http_response_body), (908 bytes).
+    Removing httpserver.o(i.send_http_response_cgi), (200 bytes).
+    Removing httpserver.o(i.send_http_response_header), (488 bytes).
+    Removing httpserver.o(.bss), (1424 bytes).
+    Removing httpserver.o(.constdata), (271 bytes).
+    Removing httpserver.o(.conststring), (218 bytes).
+    Removing httpserver.o(.data), (44 bytes).
+    Removing httputil.o(i.http_get_cgi_handler), (64 bytes).
+    Removing httputil.o(i.http_post_cgi_handler), (96 bytes).
+    Removing httputil.o(i.predefined_get_cgi_processor), (4 bytes).
+    Removing httputil.o(i.predefined_set_cgi_processor), (6 bytes).
+    Removing httputil.o(.constdata), (271 bytes).
+    Removing socket.o(i.close), (160 bytes).
+    Removing socket.o(i.connect), (348 bytes).
+    Removing socket.o(i.ctlsocket), (300 bytes).
+    Removing socket.o(i.disconnect), (188 bytes).
+    Removing socket.o(i.getsockopt), (408 bytes).
+    Removing socket.o(i.listen), (158 bytes).
+    Removing socket.o(i.recv), (288 bytes).
+    Removing socket.o(i.recvfrom), (780 bytes).
+    Removing socket.o(i.send), (384 bytes).
+    Removing socket.o(i.sendto), (524 bytes).
+    Removing socket.o(i.setsockopt), (398 bytes).
+    Removing socket.o(i.socket), (404 bytes).
+    Removing socket.o(.bss), (16 bytes).
+    Removing socket.o(.data), (14 bytes).
+    Removing w5500.o(i.WIZCHIP_READ), (116 bytes).
+    Removing w5500.o(i.WIZCHIP_READ_BUF), (140 bytes).
+    Removing w5500.o(i.WIZCHIP_WRITE), (116 bytes).
+    Removing w5500.o(i.getSn_RX_RSR), (108 bytes).
+    Removing w5500.o(i.getSn_TX_FSR), (108 bytes).
+    Removing w5500.o(i.wiz_recv_data), (132 bytes).
+    Removing w5500.o(i.wiz_recv_ignore), (102 bytes).
+    Removing w5500.o(i.wiz_send_data), (132 bytes).
+    Removing wizchip_conf.o(i.ctlnetwork), (80 bytes).
+    Removing wizchip_conf.o(i.ctlwizchip), (288 bytes).
+    Removing wizchip_conf.o(i.reg_wizchip_bus_cbfunc), (52 bytes).
+    Removing wizchip_conf.o(i.reg_wizchip_spiburst_cbfunc), (52 bytes).
+    Removing wizchip_conf.o(i.wizchip_clrinterrupt), (60 bytes).
+    Removing wizchip_conf.o(i.wizchip_getinterrupt), (42 bytes).
+    Removing wizchip_conf.o(i.wizchip_getinterruptmask), (40 bytes).
+    Removing wizchip_conf.o(i.wizchip_getnetinfo), (92 bytes).
+    Removing wizchip_conf.o(i.wizchip_getnetmode), (10 bytes).
+    Removing wizchip_conf.o(i.wizchip_gettimeout), (40 bytes).
+    Removing wizchip_conf.o(i.wizchip_init), (144 bytes).
+    Removing wizchip_conf.o(i.wizchip_setinterruptmask), (30 bytes).
+    Removing wizchip_conf.o(i.wizchip_setnetinfo), (88 bytes).
+    Removing wizchip_conf.o(i.wizchip_setnetmode), (38 bytes).
+    Removing wizchip_conf.o(i.wizchip_settimeout), (38 bytes).
+    Removing wizchip_conf.o(i.wizchip_spi_readburst), (2 bytes).
+    Removing wizchip_conf.o(i.wizchip_spi_writeburst), (2 bytes).
+    Removing wizchip_conf.o(i.wizchip_sw_reset), (114 bytes).
+    Removing wizchip_conf.o(i.wizphy_getphyconf), (120 bytes).
+    Removing wizchip_conf.o(i.wizphy_getphylink), (24 bytes).
+    Removing wizchip_conf.o(i.wizphy_getphypmode), (30 bytes).
+    Removing wizchip_conf.o(i.wizphy_getphystat), (28 bytes).
+    Removing wizchip_conf.o(i.wizphy_reset), (52 bytes).
+    Removing wizchip_conf.o(i.wizphy_setphyconf), (88 bytes).
+    Removing wizchip_conf.o(i.wizphy_setphypmode), (100 bytes).
+    Removing dadd.o(.text), (334 bytes).
+    Removing dmul.o(.text), (228 bytes).
+    Removing ddiv.o(.text), (222 bytes).
+    Removing dfixul.o(.text), (48 bytes).
+    Removing cdrcmple.o(.text), (48 bytes).
+    Removing depilogue.o(.text), (186 bytes).
+
+133 unused section(s) (total 24424 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  malloca.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  mallocr.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  malloc.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  mallocra.o ABSOLUTE
+    ../clib/microlib/malloc/mvars.c          0x00000000   Number         0  mvars.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
+    ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ../clib/microlib/string/strcat.c         0x00000000   Number         0  strcat.o ABSOLUTE
+    ../clib/microlib/string/strcmp.c         0x00000000   Number         0  strcmp.o ABSOLUTE
+    ../clib/microlib/string/strcpy.c         0x00000000   Number         0  strcpy.o ABSOLUTE
+    ../clib/microlib/string/strlen.c         0x00000000   Number         0  strlen.o ABSOLUTE
+    ../clib/microlib/string/strncpy.c        0x00000000   Number         0  strncpy.o ABSOLUTE
+    ../clib/microlib/string/strstr.c         0x00000000   Number         0  strstr.o ABSOLUTE
+    ../clib/microlib/string/strtok.c         0x00000000   Number         0  strtok_r.o ABSOLUTE
+    ../clib/microlib/string/strtok.c         0x00000000   Number         0  strtok.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    Com\delay\Delay.c                        0x00000000   Number         0  delay.o ABSOLUTE
+    Driver\gpio\Driver_GPIO.c                0x00000000   Number         0  driver_gpio.o ABSOLUTE
+    Driver\led\Driver_Led.c                  0x00000000   Number         0  driver_led.o ABSOLUTE
+    Driver\spi\Driver_SPI.c                  0x00000000   Number         0  driver_spi.o ABSOLUTE
+    Driver\usart\Dri_USART.c                 0x00000000   Number         0  dri_usart.o ABSOLUTE
+    Int\w5500\w5500_base\dhcp.c              0x00000000   Number         0  dhcp.o ABSOLUTE
+    Int\w5500\w5500_base\httpParser.c        0x00000000   Number         0  httpparser.o ABSOLUTE
+    Int\w5500\w5500_base\httpServer.c        0x00000000   Number         0  httpserver.o ABSOLUTE
+    Int\w5500\w5500_base\httpUtil.c          0x00000000   Number         0  httputil.o ABSOLUTE
+    Int\w5500\w5500_base\socket.c            0x00000000   Number         0  socket.o ABSOLUTE
+    Int\w5500\w5500_base\w5500.c             0x00000000   Number         0  w5500.o ABSOLUTE
+    Int\w5500\w5500_base\wizchip_conf.c      0x00000000   Number         0  wizchip_conf.o ABSOLUTE
+    Int\w5500\w5500_info\Inf_W5500_Ping.c    0x00000000   Number         0  inf_w5500_ping.o ABSOLUTE
+    Start\\core_cm3.c                        0x00000000   Number         0  core_cm3.o ABSOLUTE
+    Start\core_cm3.c                         0x00000000   Number         0  core_cm3.o ABSOLUTE
+    Start\startup_stm32f10x_hd.s             0x00000000   Number         0  startup_stm32f10x_hd.o ABSOLUTE
+    Start\system_stm32f10x.c                 0x00000000   Number         0  system_stm32f10x.o ABSOLUTE
+    User\main.c                              0x00000000   Number         0  main.o ABSOLUTE
+    cdrcmple.s                               0x00000000   Number         0  cdrcmple.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    RESET                                    0x08000000   Section      304  startup_stm32f10x_hd.o(RESET)
+    .ARM.Collect$$$$00000000                 0x08000130   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x08000130   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x08000134   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x08000138   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x08000138   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x08000138   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000E                 0x08000140   Section        4  entry12b.o(.ARM.Collect$$$$0000000E)
+    .ARM.Collect$$$$0000000F                 0x08000144   Section        0  entry10a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00000011                 0x08000144   Section        0  entry11a.o(.ARM.Collect$$$$00000011)
+    .ARM.Collect$$$$00002712                 0x08000144   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x08000144   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x08000148   Section       36  startup_stm32f10x_hd.o(.text)
+    .text                                    0x0800016c   Section        0  uidiv.o(.text)
+    .text                                    0x08000198   Section       36  init.o(.text)
+    i.Delay_ms                               0x080001bc   Section        0  delay.o(i.Delay_ms)
+    i.Delay_us                               0x080001d6   Section        0  delay.o(i.Delay_us)
+    i.Dri_GPIO_ResetAndInt_Init              0x0800020c   Section        0  driver_gpio.o(i.Dri_GPIO_ResetAndInt_Init)
+    i.Dri_USART_Init                         0x08000258   Section        0  dri_usart.o(i.Dri_USART_Init)
+    i.Dri_USART_SendChar                     0x08000270   Section        0  dri_usart.o(i.Dri_USART_SendChar)
+    i.Driver_SPI_Init                        0x0800028c   Section        0  driver_spi.o(i.Driver_SPI_Init)
+    i.Driver_SPI_Init_HardWare_Internet      0x08000294   Section        0  driver_spi.o(i.Driver_SPI_Init_HardWare_Internet)
+    i.Driver_SPI_Start                       0x08000370   Section        0  driver_spi.o(i.Driver_SPI_Start)
+    i.Driver_SPI_Start_Internet              0x08000378   Section        0  driver_spi.o(i.Driver_SPI_Start_Internet)
+    i.Driver_SPI_Stop                        0x0800038c   Section        0  driver_spi.o(i.Driver_SPI_Stop)
+    i.Driver_SPI_Stop_Internet               0x08000394   Section        0  driver_spi.o(i.Driver_SPI_Stop_Internet)
+    i.Driver_SPI_SwapByte                    0x080003a8   Section        0  driver_spi.o(i.Driver_SPI_SwapByte)
+    i.Driver_SPI_SwapByte_Internet           0x080003b4   Section        0  driver_spi.o(i.Driver_SPI_SwapByte_Internet)
+    i.Inf_W5500_ConfigInfo                   0x080003e8   Section        0  inf_w5500_ping.o(i.Inf_W5500_ConfigInfo)
+    i.Inf_W5500_Init                         0x08000560   Section        0  inf_w5500_ping.o(i.Inf_W5500_Init)
+    i.Inf_W5500_Restart                      0x08000578   Section        0  inf_w5500_ping.o(i.Inf_W5500_Restart)
+    i.Init_InternelFun                       0x080005a8   Section        0  dri_usart.o(i.Init_InternelFun)
+    i.SetSysClock                            0x0800064c   Section        0  system_stm32f10x.o(i.SetSysClock)
+    SetSysClock                              0x0800064d   Thumb Code     8  system_stm32f10x.o(i.SetSysClock)
+    i.SetSysClockTo72                        0x08000654   Section        0  system_stm32f10x.o(i.SetSysClockTo72)
+    SetSysClockTo72                          0x08000655   Thumb Code   214  system_stm32f10x.o(i.SetSysClockTo72)
+    i.SystemInit                             0x08000734   Section        0  system_stm32f10x.o(i.SystemInit)
+    i.USART1_IRQHandler                      0x08000794   Section        0  dri_usart.o(i.USART1_IRQHandler)
+    i.WIZCHIP_WRITE_BUF                      0x080007e4   Section        0  w5500.o(i.WIZCHIP_WRITE_BUF)
+    i.__0printf$6                            0x0800086c   Section        0  printf6.o(i.__0printf$6)
+    i.__scatterload_copy                     0x0800088c   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x0800089a   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x0800089c   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i._printf_core                           0x080008ac   Section        0  printf6.o(i._printf_core)
+    _printf_core                             0x080008ad   Thumb Code   748  printf6.o(i._printf_core)
+    i._printf_post_padding                   0x08000b9c   Section        0  printf6.o(i._printf_post_padding)
+    _printf_post_padding                     0x08000b9d   Thumb Code    36  printf6.o(i._printf_post_padding)
+    i._printf_pre_padding                    0x08000bc0   Section        0  printf6.o(i._printf_pre_padding)
+    _printf_pre_padding                      0x08000bc1   Thumb Code    46  printf6.o(i._printf_pre_padding)
+    i.fputc                                  0x08000bee   Section        0  dri_usart.o(i.fputc)
+    i.main                                   0x08000c00   Section        0  main.o(i.main)
+    i.reg_wizchip_cris_cbfunc                0x08000c30   Section        0  wizchip_conf.o(i.reg_wizchip_cris_cbfunc)
+    i.reg_wizchip_cs_cbfunc                  0x08000c58   Section        0  wizchip_conf.o(i.reg_wizchip_cs_cbfunc)
+    i.reg_wizchip_spi_cbfunc                 0x08000c80   Section        0  wizchip_conf.o(i.reg_wizchip_spi_cbfunc)
+    i.user_register_function                 0x08000cb4   Section        0  wizchip_conf.o(i.user_register_function)
+    i.wizchip_bus_readdata                   0x08000ce8   Section        0  wizchip_conf.o(i.wizchip_bus_readdata)
+    i.wizchip_bus_writedata                  0x08000cee   Section        0  wizchip_conf.o(i.wizchip_bus_writedata)
+    i.wizchip_cris_enter                     0x08000cf2   Section        0  wizchip_conf.o(i.wizchip_cris_enter)
+    i.wizchip_cris_exit                      0x08000cf4   Section        0  wizchip_conf.o(i.wizchip_cris_exit)
+    i.wizchip_cs_deselect                    0x08000cf6   Section        0  wizchip_conf.o(i.wizchip_cs_deselect)
+    i.wizchip_cs_select                      0x08000cfe   Section        0  wizchip_conf.o(i.wizchip_cs_select)
+    i.wizchip_spi_readbyte                   0x08000d06   Section        0  wizchip_conf.o(i.wizchip_spi_readbyte)
+    i.wizchip_spi_writebyte                  0x08000d10   Section        0  wizchip_conf.o(i.wizchip_spi_writebyte)
+    .data                                    0x20000000   Section      102  dri_usart.o(.data)
+    .data                                    0x20000066   Section       18  inf_w5500_ping.o(.data)
+    .data                                    0x20000078   Section       49  wizchip_conf.o(.data)
+    _DNS_                                    0x200000a4   Data           4  wizchip_conf.o(.data)
+    _DHCP_                                   0x200000a8   Data           1  wizchip_conf.o(.data)
+    .data                                    0x200000ac   Section        4  stdout.o(.data)
+    STACK                                    0x200000b0   Section     1024  startup_stm32f10x_hd.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    _printf_a                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_c                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_charcount                        0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_d                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_e                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_f                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_flags                            0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_fp_dec                           0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_fp_hex                           0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_g                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_i                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_int_dec                          0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_l                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_lc                               0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_ll                               0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_lld                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_lli                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_llo                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_llu                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_llx                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_longlong_dec                     0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_longlong_hex                     0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_longlong_oct                     0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_ls                               0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_mbtowc                           0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_n                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_o                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_p                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_percent                          0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_pre_padding                      0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_return_value                     0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_s                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_sizespec                         0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_str                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_truncate_signed                  0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_truncate_unsigned                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_u                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_wc                               0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_wctomb                           0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_widthprec                        0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_x                                0x00000000   Number         0  stubs.o ABSOLUTE
+    __arm_fini_                               - Undefined Weak Reference
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_Size                           0x00000130   Number         0  startup_stm32f10x_hd.o ABSOLUTE
+    __Vectors                                0x08000000   Data           4  startup_stm32f10x_hd.o(RESET)
+    __Vectors_End                            0x08000130   Data           0  startup_stm32f10x_hd.o(RESET)
+    __main                                   0x08000131   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x08000131   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x08000135   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x08000139   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x08000139   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x08000139   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x08000139   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_lib_shutdown_fini                   0x08000141   Thumb Code     0  entry12b.o(.ARM.Collect$$$$0000000E)
+    __rt_final_cpp                           0x08000145   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000F)
+    __rt_final_exit                          0x08000145   Thumb Code     0  entry11a.o(.ARM.Collect$$$$00000011)
+    Reset_Handler                            0x08000149   Thumb Code     8  startup_stm32f10x_hd.o(.text)
+    NMI_Handler                              0x08000151   Thumb Code     2  startup_stm32f10x_hd.o(.text)
+    HardFault_Handler                        0x08000153   Thumb Code     2  startup_stm32f10x_hd.o(.text)
+    MemManage_Handler                        0x08000155   Thumb Code     2  startup_stm32f10x_hd.o(.text)
+    BusFault_Handler                         0x08000157   Thumb Code     2  startup_stm32f10x_hd.o(.text)
+    UsageFault_Handler                       0x08000159   Thumb Code     2  startup_stm32f10x_hd.o(.text)
+    SVC_Handler                              0x0800015b   Thumb Code     2  startup_stm32f10x_hd.o(.text)
+    DebugMon_Handler                         0x0800015d   Thumb Code     2  startup_stm32f10x_hd.o(.text)
+    PendSV_Handler                           0x0800015f   Thumb Code     2  startup_stm32f10x_hd.o(.text)
+    SysTick_Handler                          0x08000161   Thumb Code     2  startup_stm32f10x_hd.o(.text)
+    ADC1_2_IRQHandler                        0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    ADC3_IRQHandler                          0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    CAN1_RX1_IRQHandler                      0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    CAN1_SCE_IRQHandler                      0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    DMA1_Channel1_IRQHandler                 0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    DMA1_Channel2_IRQHandler                 0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    DMA1_Channel3_IRQHandler                 0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    DMA1_Channel4_IRQHandler                 0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    DMA1_Channel5_IRQHandler                 0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    DMA1_Channel6_IRQHandler                 0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    DMA1_Channel7_IRQHandler                 0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    DMA2_Channel1_IRQHandler                 0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    DMA2_Channel2_IRQHandler                 0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    DMA2_Channel3_IRQHandler                 0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    DMA2_Channel4_5_IRQHandler               0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    EXTI0_IRQHandler                         0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    EXTI15_10_IRQHandler                     0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    EXTI1_IRQHandler                         0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    EXTI2_IRQHandler                         0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    EXTI3_IRQHandler                         0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    EXTI4_IRQHandler                         0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    EXTI9_5_IRQHandler                       0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    FLASH_IRQHandler                         0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    FSMC_IRQHandler                          0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    I2C1_ER_IRQHandler                       0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    I2C1_EV_IRQHandler                       0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    I2C2_ER_IRQHandler                       0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    I2C2_EV_IRQHandler                       0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    PVD_IRQHandler                           0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    RCC_IRQHandler                           0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    RTCAlarm_IRQHandler                      0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    RTC_IRQHandler                           0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    SDIO_IRQHandler                          0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    SPI1_IRQHandler                          0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    SPI2_IRQHandler                          0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    SPI3_IRQHandler                          0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    TAMPER_IRQHandler                        0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    TIM1_BRK_IRQHandler                      0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    TIM1_CC_IRQHandler                       0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    TIM1_TRG_COM_IRQHandler                  0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    TIM1_UP_IRQHandler                       0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    TIM2_IRQHandler                          0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    TIM3_IRQHandler                          0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    TIM4_IRQHandler                          0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    TIM5_IRQHandler                          0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    TIM6_IRQHandler                          0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    TIM7_IRQHandler                          0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    TIM8_BRK_IRQHandler                      0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    TIM8_CC_IRQHandler                       0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    TIM8_TRG_COM_IRQHandler                  0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    TIM8_UP_IRQHandler                       0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    UART4_IRQHandler                         0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    UART5_IRQHandler                         0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    USART2_IRQHandler                        0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    USART3_IRQHandler                        0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    USBWakeUp_IRQHandler                     0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    USB_HP_CAN1_TX_IRQHandler                0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    USB_LP_CAN1_RX0_IRQHandler               0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    WWDG_IRQHandler                          0x08000163   Thumb Code     0  startup_stm32f10x_hd.o(.text)
+    __aeabi_uidiv                            0x0800016d   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x0800016d   Thumb Code    44  uidiv.o(.text)
+    __scatterload                            0x08000199   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x08000199   Thumb Code     0  init.o(.text)
+    Delay_ms                                 0x080001bd   Thumb Code    26  delay.o(i.Delay_ms)
+    Delay_us                                 0x080001d7   Thumb Code    54  delay.o(i.Delay_us)
+    Dri_GPIO_ResetAndInt_Init                0x0800020d   Thumb Code    66  driver_gpio.o(i.Dri_GPIO_ResetAndInt_Init)
+    Dri_USART_Init                           0x08000259   Thumb Code    20  dri_usart.o(i.Dri_USART_Init)
+    Dri_USART_SendChar                       0x08000271   Thumb Code    22  dri_usart.o(i.Dri_USART_SendChar)
+    Driver_SPI_Init                          0x0800028d   Thumb Code     8  driver_spi.o(i.Driver_SPI_Init)
+    Driver_SPI_Init_HardWare_Internet        0x08000295   Thumb Code   196  driver_spi.o(i.Driver_SPI_Init_HardWare_Internet)
+    Driver_SPI_Start                         0x08000371   Thumb Code     8  driver_spi.o(i.Driver_SPI_Start)
+    Driver_SPI_Start_Internet                0x08000379   Thumb Code    14  driver_spi.o(i.Driver_SPI_Start_Internet)
+    Driver_SPI_Stop                          0x0800038d   Thumb Code     8  driver_spi.o(i.Driver_SPI_Stop)
+    Driver_SPI_Stop_Internet                 0x08000395   Thumb Code    14  driver_spi.o(i.Driver_SPI_Stop_Internet)
+    Driver_SPI_SwapByte                      0x080003a9   Thumb Code    12  driver_spi.o(i.Driver_SPI_SwapByte)
+    Driver_SPI_SwapByte_Internet             0x080003b5   Thumb Code    46  driver_spi.o(i.Driver_SPI_SwapByte_Internet)
+    Inf_W5500_ConfigInfo                     0x080003e9   Thumb Code   124  inf_w5500_ping.o(i.Inf_W5500_ConfigInfo)
+    Inf_W5500_Init                           0x08000561   Thumb Code    24  inf_w5500_ping.o(i.Inf_W5500_Init)
+    Inf_W5500_Restart                        0x08000579   Thumb Code    44  inf_w5500_ping.o(i.Inf_W5500_Restart)
+    Init_InternelFun                         0x080005a9   Thumb Code   150  dri_usart.o(i.Init_InternelFun)
+    SystemInit                               0x08000735   Thumb Code    78  system_stm32f10x.o(i.SystemInit)
+    USART1_IRQHandler                        0x08000795   Thumb Code    62  dri_usart.o(i.USART1_IRQHandler)
+    WIZCHIP_WRITE_BUF                        0x080007e5   Thumb Code   132  w5500.o(i.WIZCHIP_WRITE_BUF)
+    __0printf$6                              0x0800086d   Thumb Code    22  printf6.o(i.__0printf$6)
+    __1printf$6                              0x0800086d   Thumb Code     0  printf6.o(i.__0printf$6)
+    __2printf                                0x0800086d   Thumb Code     0  printf6.o(i.__0printf$6)
+    __scatterload_copy                       0x0800088d   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x0800089b   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x0800089d   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    fputc                                    0x08000bef   Thumb Code    16  dri_usart.o(i.fputc)
+    main                                     0x08000c01   Thumb Code    18  main.o(i.main)
+    reg_wizchip_cris_cbfunc                  0x08000c31   Thumb Code    26  wizchip_conf.o(i.reg_wizchip_cris_cbfunc)
+    reg_wizchip_cs_cbfunc                    0x08000c59   Thumb Code    26  wizchip_conf.o(i.reg_wizchip_cs_cbfunc)
+    reg_wizchip_spi_cbfunc                   0x08000c81   Thumb Code    40  wizchip_conf.o(i.reg_wizchip_spi_cbfunc)
+    user_register_function                   0x08000cb5   Thumb Code    28  wizchip_conf.o(i.user_register_function)
+    wizchip_bus_readdata                     0x08000ce9   Thumb Code     6  wizchip_conf.o(i.wizchip_bus_readdata)
+    wizchip_bus_writedata                    0x08000cef   Thumb Code     4  wizchip_conf.o(i.wizchip_bus_writedata)
+    wizchip_cris_enter                       0x08000cf3   Thumb Code     2  wizchip_conf.o(i.wizchip_cris_enter)
+    wizchip_cris_exit                        0x08000cf5   Thumb Code     2  wizchip_conf.o(i.wizchip_cris_exit)
+    wizchip_cs_deselect                      0x08000cf7   Thumb Code     8  wizchip_conf.o(i.wizchip_cs_deselect)
+    wizchip_cs_select                        0x08000cff   Thumb Code     8  wizchip_conf.o(i.wizchip_cs_select)
+    wizchip_spi_readbyte                     0x08000d07   Thumb Code    10  wizchip_conf.o(i.wizchip_spi_readbyte)
+    wizchip_spi_writebyte                    0x08000d11   Thumb Code    12  wizchip_conf.o(i.wizchip_spi_writebyte)
+    Region$$Table$$Base                      0x08000d1c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08000d3c   Number         0  anon$$obj.o(Region$$Table)
+    buff                                     0x20000000   Data         100  dri_usart.o(.data)
+    len                                      0x20000064   Data           1  dri_usart.o(.data)
+    isReadySend                              0x20000065   Data           1  dri_usart.o(.data)
+    macAddress                               0x20000066   Data           6  inf_w5500_ping.o(.data)
+    ip                                       0x2000006c   Data           4  inf_w5500_ping.o(.data)
+    subMask                                  0x20000070   Data           4  inf_w5500_ping.o(.data)
+    gateWay                                  0x20000074   Data           4  inf_w5500_ping.o(.data)
+    WIZCHIP                                  0x20000078   Data          44  wizchip_conf.o(.data)
+    __stdout                                 0x200000ac   Data           4  stdout.o(.data)
+    __initial_sp                             0x200004b0   Data           0  startup_stm32f10x_hd.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x08000131
+
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00000dec, Max: 0x00080000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00000d3c, Max: 0x00080000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x08000000   0x00000130   Data   RO           60    RESET               startup_stm32f10x_hd.o
+    0x08000130   0x08000130   0x00000000   Code   RO         1161  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000130   0x08000130   0x00000004   Code   RO         1477    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x08000134   0x08000134   0x00000004   Code   RO         1480    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000138   0x08000138   0x00000000   Code   RO         1482    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000138   0x08000138   0x00000000   Code   RO         1484    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000138   0x08000138   0x00000008   Code   RO         1485    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000140   0x08000140   0x00000004   Code   RO         1492    .ARM.Collect$$$$0000000E  mc_w.l(entry12b.o)
+    0x08000144   0x08000144   0x00000000   Code   RO         1487    .ARM.Collect$$$$0000000F  mc_w.l(entry10a.o)
+    0x08000144   0x08000144   0x00000000   Code   RO         1489    .ARM.Collect$$$$00000011  mc_w.l(entry11a.o)
+    0x08000144   0x08000144   0x00000004   Code   RO         1478    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000148   0x08000148   0x00000024   Code   RO           61    .text               startup_stm32f10x_hd.o
+    0x0800016c   0x0800016c   0x0000002c   Code   RO         1494    .text               mc_w.l(uidiv.o)
+    0x08000198   0x08000198   0x00000024   Code   RO         1511    .text               mc_w.l(init.o)
+    0x080001bc   0x080001bc   0x0000001a   Code   RO          292    i.Delay_ms          delay.o
+    0x080001d6   0x080001d6   0x00000036   Code   RO          294    i.Delay_us          delay.o
+    0x0800020c   0x0800020c   0x0000004c   Code   RO          277    i.Dri_GPIO_ResetAndInt_Init  driver_gpio.o
+    0x08000258   0x08000258   0x00000018   Code   RO          143    i.Dri_USART_Init    dri_usart.o
+    0x08000270   0x08000270   0x0000001c   Code   RO          147    i.Dri_USART_SendChar  dri_usart.o
+    0x0800028c   0x0800028c   0x00000008   Code   RO          220    i.Driver_SPI_Init   driver_spi.o
+    0x08000294   0x08000294   0x000000dc   Code   RO          221    i.Driver_SPI_Init_HardWare_Internet  driver_spi.o
+    0x08000370   0x08000370   0x00000008   Code   RO          222    i.Driver_SPI_Start  driver_spi.o
+    0x08000378   0x08000378   0x00000014   Code   RO          223    i.Driver_SPI_Start_Internet  driver_spi.o
+    0x0800038c   0x0800038c   0x00000008   Code   RO          224    i.Driver_SPI_Stop   driver_spi.o
+    0x08000394   0x08000394   0x00000014   Code   RO          225    i.Driver_SPI_Stop_Internet  driver_spi.o
+    0x080003a8   0x080003a8   0x0000000c   Code   RO          226    i.Driver_SPI_SwapByte  driver_spi.o
+    0x080003b4   0x080003b4   0x00000034   Code   RO          227    i.Driver_SPI_SwapByte_Internet  driver_spi.o
+    0x080003e8   0x080003e8   0x00000178   Code   RO          319    i.Inf_W5500_ConfigInfo  inf_w5500_ping.o
+    0x08000560   0x08000560   0x00000018   Code   RO          320    i.Inf_W5500_Init    inf_w5500_ping.o
+    0x08000578   0x08000578   0x00000030   Code   RO          321    i.Inf_W5500_Restart  inf_w5500_ping.o
+    0x080005a8   0x080005a8   0x000000a4   Code   RO          149    i.Init_InternelFun  dri_usart.o
+    0x0800064c   0x0800064c   0x00000008   Code   RO           17    i.SetSysClock       system_stm32f10x.o
+    0x08000654   0x08000654   0x000000e0   Code   RO           18    i.SetSysClockTo72   system_stm32f10x.o
+    0x08000734   0x08000734   0x00000060   Code   RO           20    i.SystemInit        system_stm32f10x.o
+    0x08000794   0x08000794   0x00000050   Code   RO          150    i.USART1_IRQHandler  dri_usart.o
+    0x080007e4   0x080007e4   0x00000088   Code   RO          864    i.WIZCHIP_WRITE_BUF  w5500.o
+    0x0800086c   0x0800086c   0x00000020   Code   RO         1343    i.__0printf$6       mc_w.l(printf6.o)
+    0x0800088c   0x0800088c   0x0000000e   Code   RO         1523    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x0800089a   0x0800089a   0x00000002   Code   RO         1524    i.__scatterload_null  mc_w.l(handlers.o)
+    0x0800089c   0x0800089c   0x0000000e   Code   RO         1525    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080008aa   0x080008aa   0x00000002   PAD
+    0x080008ac   0x080008ac   0x000002f0   Code   RO         1350    i._printf_core      mc_w.l(printf6.o)
+    0x08000b9c   0x08000b9c   0x00000024   Code   RO         1351    i._printf_post_padding  mc_w.l(printf6.o)
+    0x08000bc0   0x08000bc0   0x0000002e   Code   RO         1352    i._printf_pre_padding  mc_w.l(printf6.o)
+    0x08000bee   0x08000bee   0x00000010   Code   RO          151    i.fputc             dri_usart.o
+    0x08000bfe   0x08000bfe   0x00000002   PAD
+    0x08000c00   0x08000c00   0x00000030   Code   RO           65    i.main              main.o
+    0x08000c30   0x08000c30   0x00000028   Code   RO          927    i.reg_wizchip_cris_cbfunc  wizchip_conf.o
+    0x08000c58   0x08000c58   0x00000028   Code   RO          928    i.reg_wizchip_cs_cbfunc  wizchip_conf.o
+    0x08000c80   0x08000c80   0x00000034   Code   RO          929    i.reg_wizchip_spi_cbfunc  wizchip_conf.o
+    0x08000cb4   0x08000cb4   0x00000034   Code   RO          931    i.user_register_function  wizchip_conf.o
+    0x08000ce8   0x08000ce8   0x00000006   Code   RO          932    i.wizchip_bus_readdata  wizchip_conf.o
+    0x08000cee   0x08000cee   0x00000004   Code   RO          933    i.wizchip_bus_writedata  wizchip_conf.o
+    0x08000cf2   0x08000cf2   0x00000002   Code   RO          935    i.wizchip_cris_enter  wizchip_conf.o
+    0x08000cf4   0x08000cf4   0x00000002   Code   RO          936    i.wizchip_cris_exit  wizchip_conf.o
+    0x08000cf6   0x08000cf6   0x00000008   Code   RO          937    i.wizchip_cs_deselect  wizchip_conf.o
+    0x08000cfe   0x08000cfe   0x00000008   Code   RO          938    i.wizchip_cs_select  wizchip_conf.o
+    0x08000d06   0x08000d06   0x0000000a   Code   RO          950    i.wizchip_spi_readbyte  wizchip_conf.o
+    0x08000d10   0x08000d10   0x0000000c   Code   RO          952    i.wizchip_spi_writebyte  wizchip_conf.o
+    0x08000d1c   0x08000d1c   0x00000020   Data   RO         1521    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08000d3c, Size: 0x000004b0, Max: 0x00010000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x08000d3c   0x00000066   Data   RW          152    .data               dri_usart.o
+    0x20000066   0x08000da2   0x00000012   Data   RW          322    .data               inf_w5500_ping.o
+    0x20000078   0x08000db4   0x00000031   Data   RW          961    .data               wizchip_conf.o
+    0x200000a9   0x08000de5   0x00000003   PAD
+    0x200000ac   0x08000de8   0x00000004   Data   RW         1493    .data               mc_w.l(stdout.o)
+    0x200000b0        -       0x00000400   Zero   RW           58    STACK               startup_stm32f10x_hd.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+         0          0          0          0          0       4556   core_cm3.o
+        80          0          0          0          0        906   delay.o
+       312         42          0        102          0       4388   dri_usart.o
+        76         10          0          0          0        456   driver_gpio.o
+       348         42          0          0          0       3763   driver_spi.o
+       448        256          0         18          0       2280   inf_w5500_ping.o
+        48         30          0          0          0     205031   main.o
+        36          8        304          0       1024        772   startup_stm32f10x_hd.o
+       328         28          0          0          0       1893   system_stm32f10x.o
+       136          4          0          0          0       1256   w5500.o
+       236         64          0         49          0       9723   wizchip_conf.o
+
+    ----------------------------------------------------------------------
+      2050        484        336        172       1024     235024   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         2          0          0          3          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         4          0          0          0          0          0   entry12b.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+       866         14          0          0          0        352   printf6.o
+         0          0          0          4          0          0   stdout.o
+        44          0          0          0          0         80   uidiv.o
+
+    ----------------------------------------------------------------------
+      1002         30          0          4          0        500   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+      1000         30          0          4          0        500   mc_w.l
+
+    ----------------------------------------------------------------------
+      1002         30          0          4          0        500   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      3052        514        336        176       1024     233804   Grand Totals
+      3052        514        336        176       1024     233804   ELF Image Totals
+      3052        514        336        176          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 3388 (   3.31kB)
+    Total RW  Size (RW Data + ZI Data)              1200 (   1.17kB)
+    Total ROM Size (Code + RO Data + RW Data)       3564 (   3.48kB)
+
+==============================================================================
+

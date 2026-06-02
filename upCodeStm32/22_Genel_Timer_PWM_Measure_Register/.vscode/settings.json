@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "dri_usart.h": "c",
+        "driver_timer6.h": "c",
+        "driver_timer5_pwm.h": "c",
+        "delay.h": "c",
+        "driver_led.h": "c",
+        "driver_timer4_pwm.h": "c",
+        "driver_timer4_mesure.h": "c"
+    }
+}

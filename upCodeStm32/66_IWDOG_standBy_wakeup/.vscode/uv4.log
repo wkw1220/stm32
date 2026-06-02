@@ -1,0 +1,4 @@
+Load "d:\\embedded\\upCodeStm32\\66_IWDOG_standBy_wakeup\\Objects\\02_LED_Flow_Register.axf" 
+Error while accessing a target resource. Resource perhaps not available or a wrong access was attempted.
+Error: Flash Download failed  -  Target DLL has been cancelled
+Flash Load finished at 14:08:45

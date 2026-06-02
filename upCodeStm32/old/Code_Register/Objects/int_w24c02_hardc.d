@@ -1,0 +1,10 @@
+.\objects\int_w24c02_hardc.o: Int\w24C02\Int_W24C02_Hardc.c
+.\objects\int_w24c02_hardc.o: Int\w24C02\Int_W24C02.h
+.\objects\int_w24c02_hardc.o: .\Driver\I2C\Driver_I2C2_Soft.h
+.\objects\int_w24c02_hardc.o: .\Com\delay\Delay.h
+.\objects\int_w24c02_hardc.o: .\Start\stm32f10x.h
+.\objects\int_w24c02_hardc.o: .\Start\core_cm3.h
+.\objects\int_w24c02_hardc.o: D:\Keil_v5\ARM\arm5_compiler\Bin\..\include\stdint.h
+.\objects\int_w24c02_hardc.o: .\Start\system_stm32f10x.h
+.\objects\int_w24c02_hardc.o: .\Driver\usart\Driver_Usart.h
+.\objects\int_w24c02_hardc.o: D:\Keil_v5\ARM\arm5_compiler\Bin\..\include\string.h

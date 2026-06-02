@@ -1,0 +1,13 @@
+.\objects\inf_w5500_ping.o: Int\w5500\w5500_info\Inf_W5500_Ping.c
+.\objects\inf_w5500_ping.o: Int\w5500\w5500_info\Inf_W5500_Ping.h
+.\objects\inf_w5500_ping.o: .\Int\w5500\w5500_base\w5500.h
+.\objects\inf_w5500_ping.o: D:\Keil_v5\ARM\arm5_compiler\Bin\..\include\stdint.h
+.\objects\inf_w5500_ping.o: .\Int\w5500\w5500_base\wizchip_conf.h
+.\objects\inf_w5500_ping.o: .\Driver\spi\Driver_SPI.h
+.\objects\inf_w5500_ping.o: .\Start\stm32f10x.h
+.\objects\inf_w5500_ping.o: .\Start\core_cm3.h
+.\objects\inf_w5500_ping.o: .\Start\system_stm32f10x.h
+.\objects\inf_w5500_ping.o: .\Com\delay\Delay.h
+.\objects\inf_w5500_ping.o: .\Int\w5500\w5500_base/w5500.h
+.\objects\inf_w5500_ping.o: D:\Keil_v5\ARM\arm5_compiler\Bin\..\include\stdio.h
+.\objects\inf_w5500_ping.o: .\Driver\gpio\Driver_GPIO.h

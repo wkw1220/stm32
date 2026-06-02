@@ -1,0 +1,12 @@
+.\objects\dhcp.o: Int\w5500\w5500_base\dhcp.c
+.\objects\dhcp.o: Int\w5500\w5500_base\socket.h
+.\objects\dhcp.o: Int\w5500\w5500_base\wizchip_conf.h
+.\objects\dhcp.o: D:\Keil_v5\ARM\arm5_compiler\Bin\..\include\stdint.h
+.\objects\dhcp.o: .\Driver\spi\Driver_SPI.h
+.\objects\dhcp.o: .\Start\stm32f10x.h
+.\objects\dhcp.o: .\Start\core_cm3.h
+.\objects\dhcp.o: .\Start\system_stm32f10x.h
+.\objects\dhcp.o: .\Com\delay\Delay.h
+.\objects\dhcp.o: .\Int\w5500\w5500_base/w5500.h
+.\objects\dhcp.o: .\Int\w5500\w5500_base/wizchip_conf.h
+.\objects\dhcp.o: Int\w5500\w5500_base\dhcp.h

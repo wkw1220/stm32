@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "usart.h": "c",
+        "inf_key.h": "c",
+        "ebyte_core.h": "c",
+        "ebyte_e220x.h": "c",
+        "ebyte_conf.h": "c",
+        "gpio.h": "c",
+        "ebyte_callback.h": "c",
+        "ebyte_port.h": "c",
+        "inf_lora.h": "c"
+    }
+}

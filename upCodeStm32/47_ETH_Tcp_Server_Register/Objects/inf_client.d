@@ -1,0 +1,15 @@
+.\objects\inf_client.o: Int\w5500\w5500_info\Inf_Client.c
+.\objects\inf_client.o: Int\w5500\w5500_info\Inf_Client.h
+.\objects\inf_client.o: .\Int\w5500\w5500_base\w5500.h
+.\objects\inf_client.o: D:\Keil_v5\ARM\arm5_compiler\Bin\..\include\stdint.h
+.\objects\inf_client.o: .\Int\w5500\w5500_base\wizchip_conf.h
+.\objects\inf_client.o: .\Driver\spi\Driver_SPI.h
+.\objects\inf_client.o: .\Start\stm32f10x.h
+.\objects\inf_client.o: .\Start\core_cm3.h
+.\objects\inf_client.o: .\Start\system_stm32f10x.h
+.\objects\inf_client.o: .\Com\delay\Delay.h
+.\objects\inf_client.o: .\Int\w5500\w5500_base/w5500.h
+.\objects\inf_client.o: .\Int\w5500\w5500_base\socket.h
+.\objects\inf_client.o: D:\Keil_v5\ARM\arm5_compiler\Bin\..\include\stdio.h
+.\objects\inf_client.o: .\Driver\led\Driver_Led.h
+.\objects\inf_client.o: D:\Keil_v5\ARM\arm5_compiler\Bin\..\include\string.h

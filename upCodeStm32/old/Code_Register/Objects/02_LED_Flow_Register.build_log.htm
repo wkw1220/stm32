@@ -1,0 +1,143 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: a Administrator, a, LIC=X96CK-ZK17T-X7BRZ-JT8ZN-I5FIC-IUTJ0
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  D:\Keil_v5\ARM\arm5_compiler\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\embedded\upCodeStm32\old\Code_Register\Code_Register.uvprojx
+Project File Date:  09/09/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\arm5_compiler\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+compiling Int_W24C02.c...
+compiling Driver_Buzzer.c...
+compiling Int_W25Q32.c...
+compiling main.c...
+.\Driver\generalTimer\Driver_Timer5_PWM.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\Driver\dma\Driver_DMA.h(31): warning:  #1-D: last line of file ends without a newline
+  #endif 
+User\main.c(18): warning:  #223-D: function "printf" declared implicitly
+  	printf("send success!\r\n");
+User\main.c(38): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "uint32_t"
+  	Dri_DMA1_TransimitDataFromPerpherialToRam(des11, ADDR, 6);
+User\main.c: 4 warnings, 0 errors
+compiling Delay.c...
+compiling system_stm32f10x.c...
+compiling Int_W24C02_Hard.c...
+compiling Driver_I2C2_HardWare.c...
+compiling Driver_I2C2_Soft.c...
+compiling Inf_Lcd.c...
+.\Driver\fsmc\Driver_FSMC.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+Int\lcd\Inf_Lcd.c(155): warning:  #223-D: function "Dri_FSMC_LCD_Init" declared implicitly
+      Dri_FSMC_LCD_Init();
+Int\lcd\Inf_Lcd.c: 2 warnings, 0 errors
+compiling Driver_Key.c...
+compiling Driver_Led.c...
+Driver\led\Driver_Led.c(104): warning:  #223-D: function "Dri_Buzzer_Start" declared implicitly
+        Dri_Buzzer_Start();
+Driver\led\Driver_Led.c(107): warning:  #223-D: function "Dri_Buzzer_Stop" declared implicitly
+        Dri_Buzzer_Stop();
+Driver\led\Driver_Led.c: 2 warnings, 0 errors
+compiling Driver_Usart.c...
+Driver\usart\Driver_Usart.c(91): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      for (i = 0; i < strlen(str); i++)
+Driver\usart\Driver_Usart.c: 1 warning, 0 errors
+compiling Driver_SysTick.c...
+Driver\sysTick\Driver_SysTick.c(30): warning:  #1-D: last line of file ends without a newline
+  }
+Driver\sysTick\Driver_SysTick.c: 1 warning, 0 errors
+compiling Driver_TIM6.c...
+compiling Driver_Timer5_PWM.c...
+Driver\generalTimer\Driver_Timer5_PWM.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+Driver\generalTimer\Driver_Timer5_PWM.c: 1 warning, 0 errors
+compiling Driver_SPI.c...
+compiling Driver_DMA.c...
+Driver\dma\Driver_DMA.h(31): warning:  #1-D: last line of file ends without a newline
+  #endif 
+Driver\dma\Driver_DMA.c: 1 warning, 0 errors
+compiling Driver_ADC.c...
+Driver\adc\Driver_ADC.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif // !__DRIVER_ADC_H__
+Driver\adc\Driver_ADC.c: 1 warning, 0 errors
+compiling httpUtil.c...
+Int\w5500\w5500_base\httpUtil.c(70): warning:  #940-D: missing return statement at end of non-void function "predefined_get_cgi_processor" 
+  }
+Int\w5500\w5500_base\httpUtil.c(75): warning:  #940-D: missing return statement at end of non-void function "predefined_set_cgi_processor" 
+  }
+Int\w5500\w5500_base\httpUtil.c: 2 warnings, 0 errors
+compiling Driver_Lcd.c...
+Driver\lcd\Driver_Lcd.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+Driver\lcd\Driver_Lcd.c: 1 warning, 0 errors
+compiling Driver_FSMC.c...
+Driver\fsmc\Driver_FSMC.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+Driver\fsmc\Driver_FSMC.c: 1 warning, 0 errors
+compiling Driver_GPIO.c...
+compiling httpParser.c...
+Int\w5500\w5500_base\httpParser.c(223): warning:  #1293-D: assignment in condition
+  	if((name = (uint8_t *)strstr(uri, param_name)))
+Int\w5500\w5500_base\httpParser.c: 1 warning, 0 errors
+compiling w5500.c...
+compiling dhcp.c...
+compiling Inf_W5500_Ping.c...
+Int\w5500\w5500_info\Inf_W5500_Ping.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+Int\w5500\w5500_info\Inf_W5500_Ping.c(17): warning:  #223-D: function "Inf_W5500_SetMac" declared implicitly
+      Inf_W5500_SetMac(); 
+Int\w5500\w5500_info\Inf_W5500_Ping.c(19): warning:  #223-D: function "Inf_W5500_SetIP" declared implicitly
+      Inf_W5500_SetIP();
+Int\w5500\w5500_info\Inf_W5500_Ping.c(30): warning:  #159-D: declaration is incompatible with previous "Inf_W5500_SetMac"  (declared at line 17)
+  void Inf_W5500_SetMac()
+Int\w5500\w5500_info\Inf_W5500_Ping.c(37): warning:  #159-D: declaration is incompatible with previous "Inf_W5500_SetIP"  (declared at line 19)
+  void Inf_W5500_SetIP()
+Int\w5500\w5500_info\Inf_W5500_Ping.c: 5 warnings, 0 errors
+compiling socket.c...
+compiling httpServer.c...
+compiling wizchip_conf.c...
+Int\w5500\w5500_base\wizchip_conf.c(930): warning:  #1-D: last line of file ends without a newline
+  }
+Int\w5500\w5500_base\wizchip_conf.c: 1 warning, 0 errors
+linking...
+Program Size: Code=3476 RO-data=336 RW-data=12 ZI-data=1228  
+FromELF: creating hex file...
+".\Objects\02_LED_Flow_Register.axf" - 0 Error(s), 24 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:/Users/Administrator/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

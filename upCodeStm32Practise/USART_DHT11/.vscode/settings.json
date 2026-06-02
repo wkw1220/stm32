@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "dri_usart.h": "c",
+        "dri_dht11.h": "c",
+        "driver_led.h": "c"
+    }
+}

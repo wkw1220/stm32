@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "dri_usart.h": "c",
+        "driver_led.h": "c",
+        "driver_i2c2_soft.h": "c",
+        "int_w24c02.h": "c"
+    }
+}

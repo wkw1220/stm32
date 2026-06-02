@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "inf_server.h": "c",
+        "inf_w5500_ping.h": "c",
+        "driver_spi.h": "c",
+        "inf_client.h": "c",
+        "inf_httpserver.h": "c",
+        "driver_gpio.h": "c"
+    }
+}

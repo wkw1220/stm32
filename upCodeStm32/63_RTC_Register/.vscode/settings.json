@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "driver_rtc.h": "c",
+        "driver_bkp.h": "c",
+        "type_traits": "c"
+    }
+}

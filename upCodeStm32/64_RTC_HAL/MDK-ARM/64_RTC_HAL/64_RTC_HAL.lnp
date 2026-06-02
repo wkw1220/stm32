@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"64_rtc_hal\startup_stm32f103xe.o"
+"64_rtc_hal\main.o"
+"64_rtc_hal\gpio.o"
+"64_rtc_hal\rtc.o"
+"64_rtc_hal\usart.o"
+"64_rtc_hal\stm32f1xx_it.o"
+"64_rtc_hal\stm32f1xx_hal_msp.o"
+"64_rtc_hal\stm32f1xx_hal_gpio_ex.o"
+"64_rtc_hal\stm32f1xx_hal_rtc.o"
+"64_rtc_hal\stm32f1xx_hal_rtc_ex.o"
+"64_rtc_hal\stm32f1xx_hal.o"
+"64_rtc_hal\stm32f1xx_hal_rcc.o"
+"64_rtc_hal\stm32f1xx_hal_rcc_ex.o"
+"64_rtc_hal\stm32f1xx_hal_gpio.o"
+"64_rtc_hal\stm32f1xx_hal_dma.o"
+"64_rtc_hal\stm32f1xx_hal_cortex.o"
+"64_rtc_hal\stm32f1xx_hal_pwr.o"
+"64_rtc_hal\stm32f1xx_hal_flash.o"
+"64_rtc_hal\stm32f1xx_hal_flash_ex.o"
+"64_rtc_hal\stm32f1xx_hal_exti.o"
+"64_rtc_hal\stm32f1xx_hal_uart.o"
+"64_rtc_hal\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "64_RTC_HAL\64_RTC_HAL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "64_RTC_HAL.map" -o 64_RTC_HAL\64_RTC_HAL.axf

@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"51_wifi_at_test_hal\startup_stm32f103xe.o"
+"51_wifi_at_test_hal\main.o"
+"51_wifi_at_test_hal\gpio.o"
+"51_wifi_at_test_hal\usart.o"
+"51_wifi_at_test_hal\stm32f1xx_it.o"
+"51_wifi_at_test_hal\stm32f1xx_hal_msp.o"
+"51_wifi_at_test_hal\stm32f1xx_hal_gpio_ex.o"
+"51_wifi_at_test_hal\stm32f1xx_hal_tim.o"
+"51_wifi_at_test_hal\stm32f1xx_hal_tim_ex.o"
+"51_wifi_at_test_hal\stm32f1xx_hal_uart.o"
+"51_wifi_at_test_hal\stm32f1xx_hal.o"
+"51_wifi_at_test_hal\stm32f1xx_hal_rcc.o"
+"51_wifi_at_test_hal\stm32f1xx_hal_rcc_ex.o"
+"51_wifi_at_test_hal\stm32f1xx_hal_gpio.o"
+"51_wifi_at_test_hal\stm32f1xx_hal_dma.o"
+"51_wifi_at_test_hal\stm32f1xx_hal_cortex.o"
+"51_wifi_at_test_hal\stm32f1xx_hal_pwr.o"
+"51_wifi_at_test_hal\stm32f1xx_hal_flash.o"
+"51_wifi_at_test_hal\stm32f1xx_hal_flash_ex.o"
+"51_wifi_at_test_hal\stm32f1xx_hal_exti.o"
+"51_wifi_at_test_hal\system_stm32f1xx.o"
+"51_wifi_at_test_hal\inf_esp32.o"
+--library_type=microlib --strict --scatter "51_Wifi_AT_TEST_HAL\51_Wifi_AT_TEST_HAL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "51_Wifi_AT_TEST_HAL.map" -o 51_Wifi_AT_TEST_HAL\51_Wifi_AT_TEST_HAL.axf

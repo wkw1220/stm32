@@ -1,0 +1,58 @@
+#include "Driver_TIM6.h"
+#include "Driver_Usart.h"
+
+/**
+ * @brief  基本定时器是 TIMER6 和 TIMER7
+ * 
+ */
+void Dri_Timer6_Init(void)
+{
+    /* 1. 给定时器6开启时钟*/
+    RCC->APB1ENR |=RCC_APB1ENR_TIM6EN;
+    /* 2. 设置预分频值: 分频值7199表示7200分频。分频后频率10K，周期100us */
+    TIM6->PSC= 7200-1;
+    /*
+    3. 设置自动重转载寄存器的值，决定中断发生的频率。
+        假设设置为9999，表示计数器计数10000次发生一次中断。
+        计数一次100us，10000次1000000us，正好1s
+    */
+    TIM6->ARR= 10000-1;
+
+     /**为了避免一启动就立即进入更新中断（因为预分频PSC是0，真正的的值在影子寄存器中）
+     * 我们使用的还是影子寄存器中的值，只有产生中断以后才把PSC中的值更新到影子寄存器中
+     * 
+     * 必须放在使能更新中断之前，因为一旦使能更新中断，中断就会产生，中断里的代码执行速度很快。
+     * 还没有执行下面的代码，中断就已经产生了。
+     */
+    
+    //方式二：这条语句必须放前面
+    TIM6->CR1  |= TIM_CR1_URS;
+
+    TIM6->EGR |= TIM_EGR_UG;
+    //方式一： 这条语句必须放后面
+    //TIM6->SR  &= ~TIM_SR_UIF;
+    
+
+
+    /* 4. 使能更新中断 */
+    TIM6->DIER  |= TIM_DIER_UIE;
+    /* NVIC配置 */
+    /* 5. 设置中断优先级分组 */
+    NVIC_SetPriorityGrouping(3);
+    /* 6. 设置中断优先级 */
+    NVIC_SetPriority(TIM6_IRQn,1);
+    /* 7. 使能定时器6的中断 */
+    NVIC_EnableIRQ(TIM6_IRQn);
+    /* 8. 使能计数器 */
+    TIM6->CR1 |= TIM_CR1_CEN;
+
+   
+}
+
+void TIM6_IRQHandler(void){
+    TIM6->SR &= ~TIM_SR_UIF;
+    Dri_Led_Toggle(LED3_GREEN);
+    //printf("1\r\n");
+}
+
+

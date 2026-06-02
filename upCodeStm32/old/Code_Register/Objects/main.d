@@ -1,0 +1,15 @@
+.\objects\main.o: User\main.c
+.\objects\main.o: D:\Keil_v5\ARM\arm5_compiler\Bin\..\include\string.h
+.\objects\main.o: .\Com\delay\Delay.h
+.\objects\main.o: .\Start\stm32f10x.h
+.\objects\main.o: .\Start\core_cm3.h
+.\objects\main.o: D:\Keil_v5\ARM\arm5_compiler\Bin\..\include\stdint.h
+.\objects\main.o: .\Start\system_stm32f10x.h
+.\objects\main.o: .\Driver\buzzer\Driver_Buzzer.h
+.\objects\main.o: .\Driver\led\Driver_Led.h
+.\objects\main.o: .\Driver\usart\Driver_Usart.h
+.\objects\main.o: .\Int\w24C02\Int_W24C02.h
+.\objects\main.o: .\Driver\I2C\Driver_I2C2_Soft.h
+.\objects\main.o: .\Driver\basicTimer\Driver_TIM6.h
+.\objects\main.o: .\Driver\generalTimer\Driver_Timer5_PWM.h
+.\objects\main.o: .\Driver\dma\Driver_DMA.h

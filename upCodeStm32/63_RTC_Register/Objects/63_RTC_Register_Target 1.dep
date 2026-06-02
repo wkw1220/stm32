@@ -1,0 +1,75 @@
+Dependencies for Project '63_RTC_Register', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\arm5_compiler
+F (.\Start\core_cm3.c)(0x61605444)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\fsmc -I .\Driver\lcd -I .\interface\lcd -I .\Driver\rtc -I .\Driver\bkp-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\core_cm3.o --omf_browse .\objects\core_cm3.crf --depend .\objects\core_cm3.d)
+I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
+F (.\Start\system_stm32f10x.c)(0x61605444)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\fsmc -I .\Driver\lcd -I .\interface\lcd -I .\Driver\rtc -I .\Driver\bkp-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
+I (Start\stm32f10x.h)(0x66C06430)
+I (Start\core_cm3.h)(0x61605444)
+I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
+I (Start\system_stm32f10x.h)(0x61605444)
+F (.\Start\startup_stm32f10x_hd.s)(0x61605445)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include--pd "__UVISION_VERSION SETA 538" --pd "STM32F10X_HD SETA 1"--list .\listings\startup_stm32f10x_hd.lst --xref -o .\objects\startup_stm32f10x_hd.o --depend .\objects\startup_stm32f10x_hd.d)
+F (.\User\main.c)(0x6924111E)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\fsmc -I .\Driver\lcd -I .\interface\lcd -I .\Driver\rtc -I .\Driver\bkp-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\Driver\usart\Dri_USART.h)(0x66C06D83)
+I (.\Start\stm32f10x.h)(0x66C06430)
+I (.\Start\core_cm3.h)(0x61605444)
+I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
+I (.\Start\system_stm32f10x.h)(0x61605444)
+I (D:\Keil_v5\ARM\arm5_compiler\include\stdio.h)(0x667D598F)
+I (.\Com\delay\Delay.h)(0x689412DC)
+I (.\Driver\lcd\Driver_Lcd.h)(0x689AE32A)
+I (.\interface\lcd\Inf_Lcd.h)(0x69146654)
+I (D:\Keil_v5\ARM\arm5_compiler\include\math.h)(0x667D5999)
+I (.\Driver\rtc\Driver_RTC.h)(0x69231C37)
+I (D:\Keil_v5\ARM\arm5_compiler\include\time.h)(0x667D598C)
+F (.\Driver\led\Driver_Led.c)(0x66C30020)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\fsmc -I .\Driver\lcd -I .\interface\lcd -I .\Driver\rtc -I .\Driver\bkp-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\driver_led.o --omf_browse .\objects\driver_led.crf --depend .\objects\driver_led.d)
+I (Driver\led\Driver_Led.h)(0x66BD1E4D)
+I (.\Start\stm32f10x.h)(0x66C06430)
+I (.\Start\core_cm3.h)(0x61605444)
+I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
+I (.\Start\system_stm32f10x.h)(0x61605444)
+F (.\Driver\usart\Dri_USART.c)(0x68945B42)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\fsmc -I .\Driver\lcd -I .\interface\lcd -I .\Driver\rtc -I .\Driver\bkp-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\dri_usart.o --omf_browse .\objects\dri_usart.crf --depend .\objects\dri_usart.d)
+I (Driver\usart\Dri_USART.h)(0x66C06D83)
+I (.\Start\stm32f10x.h)(0x66C06430)
+I (.\Start\core_cm3.h)(0x61605444)
+I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
+I (.\Start\system_stm32f10x.h)(0x61605444)
+I (D:\Keil_v5\ARM\arm5_compiler\include\string.h)(0x667D598C)
+I (D:\Keil_v5\ARM\arm5_compiler\include\stdio.h)(0x667D598F)
+F (.\Driver\lcd\Driver_Lcd.c)(0x689AE3A1)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\fsmc -I .\Driver\lcd -I .\interface\lcd -I .\Driver\rtc -I .\Driver\bkp-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\driver_lcd.o --omf_browse .\objects\driver_lcd.crf --depend .\objects\driver_lcd.d)
+I (Driver\lcd\Driver_Lcd.h)(0x689AE32A)
+I (.\Start\stm32f10x.h)(0x66C06430)
+I (.\Start\core_cm3.h)(0x61605444)
+I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
+I (.\Start\system_stm32f10x.h)(0x61605444)
+F (.\Driver\bkp\Driver_bkp.c)(0x6922EC20)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\fsmc -I .\Driver\lcd -I .\interface\lcd -I .\Driver\rtc -I .\Driver\bkp-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\driver_bkp.o --omf_browse .\objects\driver_bkp.crf --depend .\objects\driver_bkp.d)
+I (Driver\bkp\Driver_bkp.h)(0x6922E7FD)
+I (.\Start\stm32f10x.h)(0x66C06430)
+I (.\Start\core_cm3.h)(0x61605444)
+I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
+I (.\Start\system_stm32f10x.h)(0x61605444)
+F (.\Driver\rtc\Driver_RTC.c)(0x6923B41F)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\fsmc -I .\Driver\lcd -I .\interface\lcd -I .\Driver\rtc -I .\Driver\bkp-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\driver_rtc.o --omf_browse .\objects\driver_rtc.crf --depend .\objects\driver_rtc.d)
+I (Driver\rtc\Driver_RTC.h)(0x69231C37)
+I (.\Start\stm32f10x.h)(0x66C06430)
+I (.\Start\core_cm3.h)(0x61605444)
+I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
+I (.\Start\system_stm32f10x.h)(0x61605444)
+I (D:\Keil_v5\ARM\arm5_compiler\include\time.h)(0x667D598C)
+I (D:\Keil_v5\ARM\arm5_compiler\include\stdio.h)(0x667D598F)
+F (.\Com\delay\Delay.h)(0x689412DC)()
+F (.\Com\delay\Delay.c)(0x66BC7E1D)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\fsmc -I .\Driver\lcd -I .\interface\lcd -I .\Driver\rtc -I .\Driver\bkp-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+I (Com\delay\Delay.h)(0x689412DC)
+I (.\Start\stm32f10x.h)(0x66C06430)
+I (.\Start\core_cm3.h)(0x61605444)
+I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
+I (.\Start\system_stm32f10x.h)(0x61605444)
+F (.\interface\lcd\Inf_Lcd.c)(0x6914664B)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\fsmc -I .\Driver\lcd -I .\interface\lcd -I .\Driver\rtc -I .\Driver\bkp-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\inf_lcd.o --omf_browse .\objects\inf_lcd.crf --depend .\objects\inf_lcd.d)
+I (interface\lcd\Inf_Lcd.h)(0x69146654)
+I (.\Driver\lcd\Driver_LCD.h)(0x689AE32A)
+I (.\Start\stm32f10x.h)(0x66C06430)
+I (.\Start\core_cm3.h)(0x61605444)
+I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
+I (.\Start\system_stm32f10x.h)(0x61605444)
+I (.\Com\delay\Delay.h)(0x689412DC)
+I (D:\Keil_v5\ARM\arm5_compiler\include\math.h)(0x667D5999)
+I (interface\lcd\Inf_Lcd_Font.h)(0x69146557)
+I (D:\Keil_v5\ARM\arm5_compiler\include\stdio.h)(0x667D598F)

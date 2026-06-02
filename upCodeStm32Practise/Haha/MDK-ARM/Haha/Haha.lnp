@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"haha\startup_stm32f103xe.o"
+"haha\main.o"
+"haha\gpio.o"
+"haha\usart.o"
+"haha\stm32f1xx_it.o"
+"haha\stm32f1xx_hal_msp.o"
+"haha\stm32f1xx_hal_gpio_ex.o"
+"haha\stm32f1xx_hal_uart.o"
+"haha\stm32f1xx_hal.o"
+"haha\stm32f1xx_hal_rcc.o"
+"haha\stm32f1xx_hal_rcc_ex.o"
+"haha\stm32f1xx_hal_gpio.o"
+"haha\stm32f1xx_hal_dma.o"
+"haha\stm32f1xx_hal_cortex.o"
+"haha\stm32f1xx_hal_pwr.o"
+"haha\stm32f1xx_hal_flash.o"
+"haha\stm32f1xx_hal_flash_ex.o"
+"haha\stm32f1xx_hal_exti.o"
+"haha\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Haha\Haha.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Haha.map" -o Haha\Haha.axf

@@ -1,0 +1,14 @@
+.\objects\httpparser.o: Int\w5500\w5500_base\httpParser.c
+.\objects\httpparser.o: D:\Keil_v5\ARM\arm5_compiler\Bin\..\include\stdio.h
+.\objects\httpparser.o: D:\Keil_v5\ARM\arm5_compiler\Bin\..\include\string.h
+.\objects\httpparser.o: Int\w5500\w5500_base\socket.h
+.\objects\httpparser.o: Int\w5500\w5500_base\wizchip_conf.h
+.\objects\httpparser.o: D:\Keil_v5\ARM\arm5_compiler\Bin\..\include\stdint.h
+.\objects\httpparser.o: .\Driver\spi\Driver_SPI.h
+.\objects\httpparser.o: .\Start\stm32f10x.h
+.\objects\httpparser.o: .\Start\core_cm3.h
+.\objects\httpparser.o: .\Start\system_stm32f10x.h
+.\objects\httpparser.o: .\Com\delay\Delay.h
+.\objects\httpparser.o: .\Int\w5500\w5500_base/w5500.h
+.\objects\httpparser.o: .\Int\w5500\w5500_base/wizchip_conf.h
+.\objects\httpparser.o: Int\w5500\w5500_base\httpParser.h

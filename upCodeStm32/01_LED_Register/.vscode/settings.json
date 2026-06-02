@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "stdint.h": "c",
+        "stm32f10x.h": "c"
+    },
+    "idf.currentSetup": "C:/Espressif/frameworks/esp-idf-v5.1.2/"
+}

@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"58_lowpower_stopmode_hal\startup_stm32f103xe.o"
+"58_lowpower_stopmode_hal\main.o"
+"58_lowpower_stopmode_hal\gpio.o"
+"58_lowpower_stopmode_hal\usart.o"
+"58_lowpower_stopmode_hal\stm32f1xx_it.o"
+"58_lowpower_stopmode_hal\stm32f1xx_hal_msp.o"
+"58_lowpower_stopmode_hal\stm32f1xx_hal_gpio_ex.o"
+"58_lowpower_stopmode_hal\stm32f1xx_hal_uart.o"
+"58_lowpower_stopmode_hal\stm32f1xx_hal.o"
+"58_lowpower_stopmode_hal\stm32f1xx_hal_rcc.o"
+"58_lowpower_stopmode_hal\stm32f1xx_hal_rcc_ex.o"
+"58_lowpower_stopmode_hal\stm32f1xx_hal_gpio.o"
+"58_lowpower_stopmode_hal\stm32f1xx_hal_dma.o"
+"58_lowpower_stopmode_hal\stm32f1xx_hal_cortex.o"
+"58_lowpower_stopmode_hal\stm32f1xx_hal_pwr.o"
+"58_lowpower_stopmode_hal\stm32f1xx_hal_flash.o"
+"58_lowpower_stopmode_hal\stm32f1xx_hal_flash_ex.o"
+"58_lowpower_stopmode_hal\stm32f1xx_hal_exti.o"
+"58_lowpower_stopmode_hal\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "58_LowPower_StopMode_HAL\58_LowPower_StopMode_HAL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "58_LowPower_StopMode_HAL.map" -o 58_LowPower_StopMode_HAL\58_LowPower_StopMode_HAL.axf

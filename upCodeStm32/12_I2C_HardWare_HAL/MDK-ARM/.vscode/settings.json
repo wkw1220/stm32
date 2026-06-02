@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "int_w24c02_hard.h": "c",
+        "i2c.h": "c"
+    }
+}

@@ -1,0 +1,1 @@
+30_dma_ram_waishe_hal\startup_stm32f103xe.o: startup_stm32f103xe.s

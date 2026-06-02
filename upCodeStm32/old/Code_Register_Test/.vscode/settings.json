@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "driver_led.h": "c",
+        "stm32f10x.h": "c",
+        "delay.h": "c",
+        "driver_vibrator.h": "c",
+        "driver_relay.h": "c",
+        "driver_m433.h": "c",
+        "driver_usart2.h": "c",
+        "driver_usart.h": "c"
+    }
+}

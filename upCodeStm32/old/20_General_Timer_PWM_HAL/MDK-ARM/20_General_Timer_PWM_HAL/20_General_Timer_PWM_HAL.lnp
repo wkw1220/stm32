@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"20_general_timer_pwm_hal\startup_stm32f103xe.o"
+"20_general_timer_pwm_hal\main.o"
+"20_general_timer_pwm_hal\gpio.o"
+"20_general_timer_pwm_hal\tim.o"
+"20_general_timer_pwm_hal\stm32f1xx_it.o"
+"20_general_timer_pwm_hal\stm32f1xx_hal_msp.o"
+"20_general_timer_pwm_hal\stm32f1xx_hal_gpio_ex.o"
+"20_general_timer_pwm_hal\stm32f1xx_hal_tim.o"
+"20_general_timer_pwm_hal\stm32f1xx_hal_tim_ex.o"
+"20_general_timer_pwm_hal\stm32f1xx_hal.o"
+"20_general_timer_pwm_hal\stm32f1xx_hal_rcc.o"
+"20_general_timer_pwm_hal\stm32f1xx_hal_rcc_ex.o"
+"20_general_timer_pwm_hal\stm32f1xx_hal_gpio.o"
+"20_general_timer_pwm_hal\stm32f1xx_hal_dma.o"
+"20_general_timer_pwm_hal\stm32f1xx_hal_cortex.o"
+"20_general_timer_pwm_hal\stm32f1xx_hal_pwr.o"
+"20_general_timer_pwm_hal\stm32f1xx_hal_flash.o"
+"20_general_timer_pwm_hal\stm32f1xx_hal_flash_ex.o"
+"20_general_timer_pwm_hal\stm32f1xx_hal_exti.o"
+"20_general_timer_pwm_hal\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "20_General_Timer_PWM_HAL\20_General_Timer_PWM_HAL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "20_General_Timer_PWM_HAL.map" -o 20_General_Timer_PWM_HAL\20_General_Timer_PWM_HAL.axf

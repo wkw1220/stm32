@@ -1,0 +1,33 @@
+{
+    "files.associations": {
+        "mainfun.h": "c",
+        "stm32f10x.h": "c",
+        "driver_buzzer.h": "c",
+        "driver_key.h": "c",
+        "driver_led.h": "c",
+        "driver_usart.h": "c",
+        "int_w24c02.h": "c",
+        "driver_i2c2.h": "c",
+        "driver_i2c2_soft.h": "c",
+        "driver_i2c2_hardware.h": "c",
+        "int_w24c02_hard.h": "c",
+        "driver_systick.h": "c",
+        "driver_tim6.h": "c",
+        "driver_timer5_pwm.h": "c",
+        "driver_dma.h": "c",
+        "driver_adc.h": "c",
+        "driver_spi.h": "c",
+        "int_w25q32.h": "c",
+        "delay.h": "c",
+        "driver_fsmc.h": "c",
+        "driver_lcd.h": "c",
+        "inf_lcd.h": "c",
+        "inf_lcd_font.h": "c",
+        "driver_gpio.h": "c",
+        "wizchip_conf.h": "c",
+        "stddef.h": "c",
+        "inf_w5500_ping.h": "c",
+        "w5500.h": "c",
+        "stdio.h": "c"
+    }
+}

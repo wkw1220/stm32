@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"03_led_hal_extend\startup_stm32f103xe.o"
+"03_led_hal_extend\main.o"
+"03_led_hal_extend\gpio.o"
+"03_led_hal_extend\stm32f1xx_it.o"
+"03_led_hal_extend\stm32f1xx_hal_msp.o"
+"03_led_hal_extend\stm32f1xx_hal_gpio_ex.o"
+"03_led_hal_extend\stm32f1xx_hal_tim.o"
+"03_led_hal_extend\stm32f1xx_hal_tim_ex.o"
+"03_led_hal_extend\stm32f1xx_hal.o"
+"03_led_hal_extend\stm32f1xx_hal_rcc.o"
+"03_led_hal_extend\stm32f1xx_hal_rcc_ex.o"
+"03_led_hal_extend\stm32f1xx_hal_gpio.o"
+"03_led_hal_extend\stm32f1xx_hal_dma.o"
+"03_led_hal_extend\stm32f1xx_hal_cortex.o"
+"03_led_hal_extend\stm32f1xx_hal_pwr.o"
+"03_led_hal_extend\stm32f1xx_hal_flash.o"
+"03_led_hal_extend\stm32f1xx_hal_flash_ex.o"
+"03_led_hal_extend\stm32f1xx_hal_exti.o"
+"03_led_hal_extend\system_stm32f1xx.o"
+"03_led_hal_extend\driver_led.o"
+--strict --scatter "03_LED_HAL_Extend\03_LED_HAL_Extend.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "03_LED_HAL_Extend.map" -o 03_LED_HAL_Extend\03_LED_HAL_Extend.axf
