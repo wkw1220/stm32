@@ -2,14 +2,16 @@
     "configurations": [
         {
             "name": "Target 1",
-            "cStandard": "c99",
-            "cppStandard": "c++03",
+            "cStandard": "c90",
+            "cppStandard": "c++98",
             "intelliSenseMode": "${default}",
             "includePath": [
                 "C:/Keil_v5/ARM/arm5_compiler/include",
                 "C:/Keil_v5/ARM/arm5_compiler/include/rw",
-                "01_LED_Register/Start",
-                "01_LED_Register/User"
+                "Start",
+                "User",
+                "Driver/led",
+                "Com/delay"
             ],
             "defines": [
                 "__CC_ARM",

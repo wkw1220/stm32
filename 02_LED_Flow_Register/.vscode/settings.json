@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "stm32f10x.h": "c",
+        "driver_led.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
