@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "usart.h": "c",
-        "inf_esp32.h": "c"
-    }
-}

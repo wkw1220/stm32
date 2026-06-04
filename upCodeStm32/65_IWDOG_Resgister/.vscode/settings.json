@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "driver_iwdg.h": "c",
-        "dri_usart.h": "c"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "dri_usart.h": "c",
-        "driver_timer6.h": "c",
-        "driver_timer5.h": "c",
-        "driver_led.h": "c"
-    }
-}

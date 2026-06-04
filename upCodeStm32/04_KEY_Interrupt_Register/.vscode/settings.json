@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "driver_key.h": "c",
-        "delay.h": "c",
-        "driver_led.h": "c",
-        "stm32f10x.h": "c"
-    }
-}
