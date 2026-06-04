@@ -44,8 +44,8 @@ void Delay_us(uint16_t us)
     //SysTick->CTRL |=(SysTick_CTRL_ENABLE|SysTick_CTRL_CLKSOURCE);
     //SysTick->CTRL |=SysTick_CTRL_ENABLE;
     SysTick->CTRL |=SysTick_CTRL_ENABLE_Msk;
-    //SysTick->CTRL |=SysTick_CTRL_CLKSOURCE;
-    SysTick->CTRL |=SysTick_CTRL_CLKSOURCE_Msk;
+    SysTick->CTRL |=SysTick_CTRL_CLKSOURCE;  //时钟频率：72M 
+    //SysTick->CTRL &=~SysTick_CTRL_CLKSOURCE_Msk;  //时钟频率:9M
     //SysTick->CTRL = 0x5;
     
     /**
@@ -65,7 +65,9 @@ void Delay_us(uint16_t us)
      * 
      * */
     //while (!(SysTick->CTRL & SysTick_CTRL_COUNTFLAG));
-    while (!(SysTick->CTRL & SysTick_CTRL_COUNTFLAG_Msk));
+    while (!(SysTick->CTRL & SysTick_CTRL_COUNTFLAG_Msk)){
+        //SysTick->VAL = 5000;  //每执行一次，SysTick->VAL会变为0，但是SysTick_CTRL_COUNTFLAG会清零，重新新的一轮开始
+    }
     /* 关闭定时器 */
     //SysTick->CTRL &= ~SysTick_CTRL_ENABLE;
     SysTick->CTRL &= ~SysTick_CTRL_ENABLE_Msk;  
@@ -130,6 +132,11 @@ void Delay_BadWay(void){
 
 
   /**
+   * 
+   * while (!(SysTick->CTRL & SysTick_CTRL_COUNTFLAG_Msk)){
+        //SysTick->VAL = 5000;  //每执行一次，SysTick->VAL会变为0，但是SysTick_CTRL_COUNTFLAG会清零，重新新的一轮开始
+    }
+
    * 如果在计时的过程中向Val寄存器里写值了 会发生什么？
    * 不会把你写进去的那个数当成新的计数值。
    对 STM32F103 的 SysTick 来说，在计时过程中向 VAL 寄存器写任意值，会发生这几件事：
@@ -186,3 +193,8 @@ void Delay_BadWay(void){
         写 VAL ≠ 触发中断
         写 VAL ≠ 清除已经 pending 的 SysTick 中断  
         */
+
+        /**
+         * 一旦SysTick->CTRL |=SysTick_CTRL_ENABLE;开始使能 硬件就开始工作，计时器就开始工作，这完全是硬件行为
+         * 不会影响主程序的执行 这个要注意
+         */
