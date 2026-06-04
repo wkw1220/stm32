@@ -184,5 +184,5 @@ void Delay_BadWay(void){
 
         写 VAL = 重新开始下一轮计时
         写 VAL ≠ 触发中断
-        写 VAL ≠ 清除已经 pending 的 SysTick 中断
+        写 VAL ≠ 清除已经 pending 的 SysTick 中断  
         */
