@@ -1,9 +1,0 @@
-.\objects\dri_dht11.o: Driver\dht11\Dri_DHT11.c
-.\objects\dri_dht11.o: Driver\dht11\Dri_DHT11.h
-.\objects\dri_dht11.o: .\Start\stm32f10x.h
-.\objects\dri_dht11.o: .\Start\core_cm3.h
-.\objects\dri_dht11.o: D:\Keil_v5\ARM\arm5_compiler\Bin\..\include\stdint.h
-.\objects\dri_dht11.o: .\Start\system_stm32f10x.h
-.\objects\dri_dht11.o: D:\Keil_v5\ARM\arm5_compiler\Bin\..\include\stdio.h
-.\objects\dri_dht11.o: D:\Keil_v5\ARM\arm5_compiler\Bin\..\include\string.h
-.\objects\dri_dht11.o: .\Com\delay\Delay.h

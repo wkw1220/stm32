@@ -1,41 +1,0 @@
-Dependencies for Project '04_KEY_Interrupt_Register_Led_Flow', Target 'Target 1': (DO NOT MODIFY !)
-CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\arm5_compiler
-F (.\Start\core_cm3.c)(0x61605444)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\key-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\core_cm3.o --omf_browse .\objects\core_cm3.crf --depend .\objects\core_cm3.d)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-F (.\Start\system_stm32f10x.c)(0x61605444)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\key-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
-I (Start\stm32f10x.h)(0x6900388F)
-I (Start\core_cm3.h)(0x61605444)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (Start\system_stm32f10x.h)(0x61605444)
-F (.\Start\startup_stm32f10x_hd.s)(0x61605445)(--cpu Cortex-M3 -g --apcs=interwork -ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include--pd "__UVISION_VERSION SETA 538" --pd "STM32F10X_HD SETA 1"--list .\listings\startup_stm32f10x_hd.lst --xref -o .\objects\startup_stm32f10x_hd.o --depend .\objects\startup_stm32f10x_hd.d)
-F (.\User\main.c)(0x6948A70C)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\key-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (.\Start\stm32f10x.h)(0x6900388F)
-I (.\Start\core_cm3.h)(0x61605444)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (.\Start\system_stm32f10x.h)(0x61605444)
-I (.\Com\delay\Delay.h)(0x66BEC471)
-I (.\Driver\led\Driver_Led.h)(0x66BEC3F2)
-I (.\Driver\key\Driver_Key.h)(0x66BEC37C)
-F (.\Driver\led\Driver_Led.c)(0x66CD830D)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\key-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\driver_led.o --omf_browse .\objects\driver_led.crf --depend .\objects\driver_led.d)
-I (Driver\led\Driver_Led.h)(0x66BEC3F2)
-I (.\Start\stm32f10x.h)(0x6900388F)
-I (.\Start\core_cm3.h)(0x61605444)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (.\Start\system_stm32f10x.h)(0x61605444)
-F (.\Driver\led\Driver_Led.h)(0x66BEC3F2)()
-F (.\Driver\key\Driver_Key.c)(0x6948A702)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\key-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\driver_key.o --omf_browse .\objects\driver_key.crf --depend .\objects\driver_key.d)
-I (.\Start\stm32f10x.h)(0x6900388F)
-I (.\Start\core_cm3.h)(0x61605444)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (.\Start\system_stm32f10x.h)(0x61605444)
-I (Driver\key\Driver_Key.h)(0x66BEC37C)
-I (.\Driver\led\Driver_Led.h)(0x66BEC3F2)
-I (.\Com\delay\Delay.h)(0x66BEC471)
-F (.\Driver\key\Driver_Key.h)(0x66BEC37C)()
-F (.\Com\delay\Delay.h)(0x66BEC471)()
-F (.\Com\delay\Delay.c)(0x69030B2B)(--c99 --gnu -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\key-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
-I (Com\delay\Delay.h)(0x66BEC471)
-I (.\Start\stm32f10x.h)(0x6900388F)
-I (.\Start\core_cm3.h)(0x61605444)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (.\Start\system_stm32f10x.h)(0x61605444)

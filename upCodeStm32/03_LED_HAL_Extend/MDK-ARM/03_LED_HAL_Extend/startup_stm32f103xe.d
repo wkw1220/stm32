@@ -1,1 +1,0 @@
-03_led_hal_extend\startup_stm32f103xe.o: startup_stm32f103xe.s

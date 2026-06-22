@@ -1,21 +1,6 @@
-# 1.忽略所有文件
-*
-# 2.反选要提交的后缀（保留，不忽略）
-!.c
-!.h
-# 如需多后缀继续加 
-!.md
-!.txt
-# 保留.gitignore自身
+﻿*
+!*/
+!*.c
+!*.h
 !.gitignore
-*.log
-*.crf
-*.crf
-upCodeStm32Practise/06_USART2_Poll_Register_noSuccess/Objects/delay.crf
-*.crf
-*.json
-*.crf
-*.crf
-*.crf
-*.json
-*.crf
+!.gitkeep

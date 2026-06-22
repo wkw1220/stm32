@@ -1,156 +1,0 @@
-Dependencies for Project '48_ETH_Tcp_Client_Register', Target 'Target 1': (DO NOT MODIFY !)
-CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\arm5_compiler
-F (.\Start\core_cm3.c)(0x61605444)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\spi -I .\Int\w5500\w5500_base -I .\Int\w5500\w5500_info -I .\Driver\gpio -I .\Int\w5500-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\core_cm3.o --omf_browse .\objects\core_cm3.crf --depend .\objects\core_cm3.d)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-F (.\Start\system_stm32f10x.c)(0x61605444)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\spi -I .\Int\w5500\w5500_base -I .\Int\w5500\w5500_info -I .\Driver\gpio -I .\Int\w5500-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
-I (Start\stm32f10x.h)(0x66C06430)
-I (Start\core_cm3.h)(0x61605444)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (Start\system_stm32f10x.h)(0x61605444)
-F (.\Start\startup_stm32f10x_hd.s)(0x61605445)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include--pd "__UVISION_VERSION SETA 538" --pd "STM32F10X_HD SETA 1"--list .\listings\startup_stm32f10x_hd.lst --xref -o .\objects\startup_stm32f10x_hd.o --depend .\objects\startup_stm32f10x_hd.d)
-F (.\User\main.c)(0x689D9E09)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\spi -I .\Int\w5500\w5500_base -I .\Int\w5500\w5500_info -I .\Driver\gpio -I .\Int\w5500-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (.\Driver\usart\Dri_USART.h)(0x66C06D83)
-I (.\Start\stm32f10x.h)(0x66C06430)
-I (.\Start\core_cm3.h)(0x61605444)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (.\Start\system_stm32f10x.h)(0x61605444)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdio.h)(0x667D598F)
-I (.\Com\delay\Delay.h)(0x689412DC)
-I (.\Int\w5500\w5500_info\Inf_Client.h)(0x66E0F483)
-I (.\Int\w5500\w5500_base\w5500.h)(0x667D5AB5)
-I (.\Int\w5500\w5500_base\wizchip_conf.h)(0x689D550C)
-I (.\Driver\spi\Driver_SPI.h)(0x689D4FF3)
-I (.\Int\w5500\w5500_base/w5500.h)(0x667D5AB5)
-I (.\Int\w5500\w5500_base\socket.h)(0x667D5A86)
-I (.\Driver\led\Driver_Led.h)(0x689D88B0)
-F (.\Driver\led\Driver_Led.c)(0x689D89AE)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\spi -I .\Int\w5500\w5500_base -I .\Int\w5500\w5500_info -I .\Driver\gpio -I .\Int\w5500-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\driver_led.o --omf_browse .\objects\driver_led.crf --depend .\objects\driver_led.d)
-I (Driver\led\Driver_Led.h)(0x689D88B0)
-I (.\Start\stm32f10x.h)(0x66C06430)
-I (.\Start\core_cm3.h)(0x61605444)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (.\Start\system_stm32f10x.h)(0x61605444)
-F (.\Driver\usart\Dri_USART.c)(0x68945B42)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\spi -I .\Int\w5500\w5500_base -I .\Int\w5500\w5500_info -I .\Driver\gpio -I .\Int\w5500-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\dri_usart.o --omf_browse .\objects\dri_usart.crf --depend .\objects\dri_usart.d)
-I (Driver\usart\Dri_USART.h)(0x66C06D83)
-I (.\Start\stm32f10x.h)(0x66C06430)
-I (.\Start\core_cm3.h)(0x61605444)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (.\Start\system_stm32f10x.h)(0x61605444)
-I (D:\Keil_v5\ARM\arm5_compiler\include\string.h)(0x667D598C)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdio.h)(0x667D598F)
-F (.\Driver\spi\Driver_SPI.c)(0x689D4FB8)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\spi -I .\Int\w5500\w5500_base -I .\Int\w5500\w5500_info -I .\Driver\gpio -I .\Int\w5500-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\driver_spi.o --omf_browse .\objects\driver_spi.crf --depend .\objects\driver_spi.d)
-I (Driver\spi\Driver_SPI.h)(0x689D4FF3)
-I (.\Start\stm32f10x.h)(0x66C06430)
-I (.\Start\core_cm3.h)(0x61605444)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (.\Start\system_stm32f10x.h)(0x61605444)
-I (.\Com\delay\Delay.h)(0x689412DC)
-F (.\Driver\gpio\Driver_GPIO.c)(0x66DFC080)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\spi -I .\Int\w5500\w5500_base -I .\Int\w5500\w5500_info -I .\Driver\gpio -I .\Int\w5500-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\driver_gpio.o --omf_browse .\objects\driver_gpio.crf --depend .\objects\driver_gpio.d)
-I (Driver\gpio\Driver_GPIO.h)(0x66DF0578)
-I (.\Start\stm32f10x.h)(0x66C06430)
-I (.\Start\core_cm3.h)(0x61605444)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (.\Start\system_stm32f10x.h)(0x61605444)
-F (.\Com\delay\Delay.h)(0x689412DC)()
-F (.\Com\delay\Delay.c)(0x66BC7E1D)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\spi -I .\Int\w5500\w5500_base -I .\Int\w5500\w5500_info -I .\Driver\gpio -I .\Int\w5500-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
-I (Com\delay\Delay.h)(0x689412DC)
-I (.\Start\stm32f10x.h)(0x66C06430)
-I (.\Start\core_cm3.h)(0x61605444)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (.\Start\system_stm32f10x.h)(0x61605444)
-F (.\Int\w5500\w5500_base\dhcp.c)(0x667D5AB4)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\spi -I .\Int\w5500\w5500_base -I .\Int\w5500\w5500_info -I .\Driver\gpio -I .\Int\w5500-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\dhcp.o --omf_browse .\objects\dhcp.crf --depend .\objects\dhcp.d)
-I (Int\w5500\w5500_base\socket.h)(0x667D5A86)
-I (Int\w5500\w5500_base\wizchip_conf.h)(0x689D550C)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (.\Driver\spi\Driver_SPI.h)(0x689D4FF3)
-I (.\Start\stm32f10x.h)(0x66C06430)
-I (.\Start\core_cm3.h)(0x61605444)
-I (.\Start\system_stm32f10x.h)(0x61605444)
-I (.\Com\delay\Delay.h)(0x689412DC)
-I (.\Int\w5500\w5500_base/w5500.h)(0x667D5AB5)
-I (.\Int\w5500\w5500_base/wizchip_conf.h)(0x689D550C)
-I (Int\w5500\w5500_base\dhcp.h)(0x667D5AB4)
-F (.\Int\w5500\w5500_base\httpParser.c)(0x667D5AB1)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\spi -I .\Int\w5500\w5500_base -I .\Int\w5500\w5500_info -I .\Driver\gpio -I .\Int\w5500-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\httpparser.o --omf_browse .\objects\httpparser.crf --depend .\objects\httpparser.d)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdio.h)(0x667D598F)
-I (D:\Keil_v5\ARM\arm5_compiler\include\string.h)(0x667D598C)
-I (Int\w5500\w5500_base\socket.h)(0x667D5A86)
-I (Int\w5500\w5500_base\wizchip_conf.h)(0x689D550C)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (.\Driver\spi\Driver_SPI.h)(0x689D4FF3)
-I (.\Start\stm32f10x.h)(0x66C06430)
-I (.\Start\core_cm3.h)(0x61605444)
-I (.\Start\system_stm32f10x.h)(0x61605444)
-I (.\Com\delay\Delay.h)(0x689412DC)
-I (.\Int\w5500\w5500_base/w5500.h)(0x667D5AB5)
-I (.\Int\w5500\w5500_base/wizchip_conf.h)(0x689D550C)
-I (Int\w5500\w5500_base\httpParser.h)(0x667D5AB0)
-F (.\Int\w5500\w5500_base\httpServer.c)(0x667D5AB0)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\spi -I .\Int\w5500\w5500_base -I .\Int\w5500\w5500_info -I .\Driver\gpio -I .\Int\w5500-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\httpserver.o --omf_browse .\objects\httpserver.crf --depend .\objects\httpserver.d)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdio.h)(0x667D598F)
-I (D:\Keil_v5\ARM\arm5_compiler\include\string.h)(0x667D598C)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdlib.h)(0x667D598E)
-I (Int\w5500\w5500_base\socket.h)(0x667D5A86)
-I (Int\w5500\w5500_base\wizchip_conf.h)(0x689D550C)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (.\Driver\spi\Driver_SPI.h)(0x689D4FF3)
-I (.\Start\stm32f10x.h)(0x66C06430)
-I (.\Start\core_cm3.h)(0x61605444)
-I (.\Start\system_stm32f10x.h)(0x61605444)
-I (.\Com\delay\Delay.h)(0x689412DC)
-I (.\Int\w5500\w5500_base/w5500.h)(0x667D5AB5)
-I (.\Int\w5500\w5500_base/wizchip_conf.h)(0x689D550C)
-I (Int\w5500\w5500_base\httpServer.h)(0x667D5AB0)
-I (Int\w5500\w5500_base\httpParser.h)(0x667D5AB0)
-I (Int\w5500\w5500_base\httpUtil.h)(0x667D5AAF)
-F (.\Int\w5500\w5500_base\httpUtil.c)(0x667D5AB0)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\spi -I .\Int\w5500\w5500_base -I .\Int\w5500\w5500_info -I .\Driver\gpio -I .\Int\w5500-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\httputil.o --omf_browse .\objects\httputil.crf --depend .\objects\httputil.d)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdio.h)(0x667D598F)
-I (D:\Keil_v5\ARM\arm5_compiler\include\string.h)(0x667D598C)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdlib.h)(0x667D598E)
-I (Int\w5500\w5500_base\httpUtil.h)(0x667D5AAF)
-I (Int\w5500\w5500_base\httpServer.h)(0x667D5AB0)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (Int\w5500\w5500_base\httpParser.h)(0x667D5AB0)
-F (.\Int\w5500\w5500_base\socket.c)(0x667D5A86)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\spi -I .\Int\w5500\w5500_base -I .\Int\w5500\w5500_info -I .\Driver\gpio -I .\Int\w5500-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\socket.o --omf_browse .\objects\socket.crf --depend .\objects\socket.d)
-I (Int\w5500\w5500_base\socket.h)(0x667D5A86)
-I (Int\w5500\w5500_base\wizchip_conf.h)(0x689D550C)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (.\Driver\spi\Driver_SPI.h)(0x689D4FF3)
-I (.\Start\stm32f10x.h)(0x66C06430)
-I (.\Start\core_cm3.h)(0x61605444)
-I (.\Start\system_stm32f10x.h)(0x61605444)
-I (.\Com\delay\Delay.h)(0x689412DC)
-I (.\Int\w5500\w5500_base/w5500.h)(0x667D5AB5)
-I (.\Int\w5500\w5500_base/wizchip_conf.h)(0x689D550C)
-F (.\Int\w5500\w5500_base\w5500.c)(0x667D5AB5)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\spi -I .\Int\w5500\w5500_base -I .\Int\w5500\w5500_info -I .\Driver\gpio -I .\Int\w5500-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\w5500.o --omf_browse .\objects\w5500.crf --depend .\objects\w5500.d)
-I (Int\w5500\w5500_base\w5500.h)(0x667D5AB5)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (Int\w5500\w5500_base\wizchip_conf.h)(0x689D550C)
-I (.\Driver\spi\Driver_SPI.h)(0x689D4FF3)
-I (.\Start\stm32f10x.h)(0x66C06430)
-I (.\Start\core_cm3.h)(0x61605444)
-I (.\Start\system_stm32f10x.h)(0x61605444)
-I (.\Com\delay\Delay.h)(0x689412DC)
-I (.\Int\w5500\w5500_base/w5500.h)(0x667D5AB5)
-F (.\Int\w5500\w5500_base\wizchip_conf.c)(0x689D57FB)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\spi -I .\Int\w5500\w5500_base -I .\Int\w5500\w5500_info -I .\Driver\gpio -I .\Int\w5500-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\wizchip_conf.o --omf_browse .\objects\wizchip_conf.crf --depend .\objects\wizchip_conf.d)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stddef.h)(0x667D5990)
-I (Int\w5500\w5500_base\wizchip_conf.h)(0x689D550C)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (.\Driver\spi\Driver_SPI.h)(0x689D4FF3)
-I (.\Start\stm32f10x.h)(0x66C06430)
-I (.\Start\core_cm3.h)(0x61605444)
-I (.\Start\system_stm32f10x.h)(0x61605444)
-I (.\Com\delay\Delay.h)(0x689412DC)
-I (.\Int\w5500\w5500_base/w5500.h)(0x667D5AB5)
-I (.\Int\w5500\w5500_base/wizchip_conf.h)(0x689D550C)
-F (.\Int\w5500\w5500_info\Inf_Client.c)(0x689D9DB4)(--c99 --gnu -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Start -I .\User -I .\Driver\led -I .\Com\delay -I .\Driver\usart -I .\Driver\spi -I .\Int\w5500\w5500_base -I .\Int\w5500\w5500_info -I .\Driver\gpio -I .\Int\w5500-ID:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="538" -DSTM32F10X_HD-o .\objects\inf_client.o --omf_browse .\objects\inf_client.crf --depend .\objects\inf_client.d)
-I (Int\w5500\w5500_info\Inf_Client.h)(0x66E0F483)
-I (.\Int\w5500\w5500_base\w5500.h)(0x667D5AB5)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdint.h)(0x667D598F)
-I (.\Int\w5500\w5500_base\wizchip_conf.h)(0x689D550C)
-I (.\Driver\spi\Driver_SPI.h)(0x689D4FF3)
-I (.\Start\stm32f10x.h)(0x66C06430)
-I (.\Start\core_cm3.h)(0x61605444)
-I (.\Start\system_stm32f10x.h)(0x61605444)
-I (.\Com\delay\Delay.h)(0x689412DC)
-I (.\Int\w5500\w5500_base/w5500.h)(0x667D5AB5)
-I (.\Int\w5500\w5500_base\socket.h)(0x667D5A86)
-I (D:\Keil_v5\ARM\arm5_compiler\include\stdio.h)(0x667D598F)
-I (.\Driver\led\Driver_Led.h)(0x689D88B0)
