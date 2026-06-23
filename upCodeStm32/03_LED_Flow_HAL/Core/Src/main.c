@@ -57,85 +57,35 @@
  * 如果构建HAL项目:
  * 1.sys系统工作模式:烧录程序的方式
  *   no debug中选择serial wire串行线
- *   如果没有选择是no bug，也可以烧录，但是芯片是没办法再烧录第二次
- *   如果想再重新烧录，必须修改启动模式为bootLoader模式
+ *   如果没有选择是no bug,也可以烧录，但是芯片是没办法再烧录第二次
+ *   如果想再重新烧录,必须修改启动模式为bootLoader模式
  * 2.RCC设置:HSE和LSE都选择Crystal/Ceramic Resonator
- * 3.Clock Configuration：因为再RCC设置了，所以HSE和LSE两个值都是蓝色并可用
+ * 3.Clock Configuration:因为再RCC设置了,所以HSE和LSE两个值都是蓝色并可用
  * 4.GPOI引脚配置
- *   GPIO Output Level：表示一上电时的电平
- *                      High：高电平--->没电
- *                      Low：低电平--->有电
+ *   GPIO Output Level:表示一上电时的电平
+ *                      High:高电平--->没电
+ *                      Low:低电平--->有电
  * 
  * 不要再MDK-ARM文件里建新文件
  */
 
-/* USER CODE END Header */
-/* Includes ------------------------------------------------------------------*/
+
 #include "main.h"
 #include "gpio.h"
 
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
 
-/* USER CODE END Includes */
-
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
-
-/* USER CODE END PTD */
-
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
-
-/* USER CODE END PD */
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-
-/* USER CODE END PM */
-
-/* Private variables ---------------------------------------------------------*/
-
-/* USER CODE BEGIN PV */
-
-/* USER CODE END PV */
-
-/* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
-/* USER CODE BEGIN PFP */
 
-/* USER CODE END PFP */
-
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
-
-/* USER CODE END 0 */
-
-/**
- * @brief  The application entry point.
- * @retval int
- */
 int main(void)
 {
-  /* USER CODE BEGIN 1 */
-
-  /* USER CODE END 1 */
-
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick.
+     复位所有外设，初始化闪存接口与系统滴答定时器。
+   */
   HAL_Init();
-
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
 
   /* Configure the system clock */
   SystemClock_Config();
-
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
