@@ -47,10 +47,13 @@
 /**
  * 时钟树:时钟树是一套硬件电路，控制时钟的生成和时钟的供给。
  *  问:为什么芯片内部有时钟源却不用?
- *   首先晶振是没办法做到小型化的，芯片内部时钟是不可能用晶振做的，是用RC震荡电路实现的，
- *   但是RC震荡电路对温度很敏感，容易得到一个不稳定的时钟信号，例如在串口通讯或者时序要求
+ *   首先晶振是没办法做到小型化的,芯片内部时钟是不可能用晶振做的,是用RC震荡电路实现的,
+ *   但是RC震荡电路对温度很敏感,容易得到一个不稳定的时钟信号,例如在串口通讯或者时序要求
  *   比较严格的地方就非常不合适。但是晶振对温度就不是很敏感。如果从节约成本上又不影响性能
  *   的产品就可以用内部时钟。例如就简单的做个闹钟。
+ * 
+ *   锁相环是倍频器,是倍频器的一种实现方式,倍频器有很多种实现方式,锁相环是其中一种实现方式。
+ *   倍频器的作用就是把一个频率较低的时钟信号转换成一个频率较高的时钟信号。
  */
 
 /**
@@ -87,7 +90,10 @@ int main(void)
   /* Configure the system clock */
   SystemClock_Config();
 
-  /* Initialize all configured peripherals */
+  /* Initialize all configured peripherals
+     前缀MX_ 表示的事经过CUBEMX配置过的外设初始化函数 
+     The prefix MX_ refers to peripheral initialization functions configured via CUBEMX.
+   */
   MX_GPIO_Init();
 
   /* USER CODE BEGIN 2 */
